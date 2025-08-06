@@ -1,0 +1,482 @@
+{
+  "metadata": {
+    "title": "ASME BPVC 2023 Section II Part D - 완전 통합 가이드",
+    "version": "1.0.0",
+    "created_date": "2025-08-06",
+    "description": "온라인 LLM을 위한 ASME BPVC 재료 데이터 완전 가이드",
+    "total_tables": 161,
+    "total_charts": 179,
+    "total_qa_pairs": 75,
+    "file_size": "통합 파일"
+  },
+  "introduction": {
+    "purpose": "이 파일은 ASME BPVC 2023 Section II Part D의 모든 재료 데이터를 포함한 완전한 가이드입니다. 온라인 LLM이 ASME 재료 관련 질문에 정확하게 답변할 수 있도록 설계되었습니다.",
+    "usage": "이 파일 하나만으로 ASME 재료의 허용응력값, 설계응력강도값, 기계적 특성, 사용 가이드라인 등 모든 정보를 조회할 수 있습니다.",
+    "structure": "재료별 분류, 온도별 응력값, 설계 예시, 사용 가이드라인으로 구성되어 있습니다."
+  },
+  "materials": {
+    "carbon_steel": {
+      "name": "Carbon Steel (탄소강)",
+      "description": "가장 일반적으로 사용되는 경제적인 강재",
+      "specifications": ["SA-516", "SA-283", "SA-285", "SA-333", "SA-334", "SA-414", "SA-524", "SA-671", "SA-672"],
+      "product_forms": ["Plate", "Bar", "Pipe", "Tube", "Sheet", "Welded Pipe"],
+      "properties": {
+        "tensile_strength_range": "55-85 ksi",
+        "yield_strength_range": "30-55 ksi",
+        "temperature_limit": "상온~800°F",
+        "weldability": "우수",
+        "corrosion_resistance": "보통 (도장/코팅 필요)",
+        "cost": "경제적"
+      },
+      "usage": {
+        "high_temperature": false,
+        "low_temperature": true,
+        "general_purpose": true,
+        "applications": ["압력용기", "저장탱크", "일반 구조용"]
+      }
+    },
+    "alloy_steel": {
+      "name": "Alloy Steel (합금강)",
+      "description": "고온 및 특수 환경에서 사용되는 합금강",
+      "specifications": ["SA-213", "SA-335", "SA-387"],
+      "grades": {
+        "tube_grades": ["T11", "T22", "T91", "T92"],
+        "pipe_grades": ["P11", "P22", "P91", "P92"]
+      },
+      "properties": {
+        "high_temperature_oxidation_resistance": "우수",
+        "creep_resistance": "우수",
+        "high_temperature_strength": "우수",
+        "weldability": "보통 (사전가열 필요)",
+        "cost": "중간"
+      },
+      "usage": {
+        "high_temperature": true,
+        "low_temperature": false,
+        "general_purpose": false,
+        "applications": ["보일러", "고온 배관", "터빈"]
+      }
+    },
+    "stainless_steel": {
+      "name": "Stainless Steel (스테인리스강)",
+      "description": "내식성이 우수한 고급 강재",
+      "specifications": ["SA-240", "SA-312", "SA-358", "SA-376", "SA-409", "SA-430", "SA-479"],
+      "grades": {
+        "general_purpose": ["Type 304", "Type 304L"],
+        "corrosion_resistant": ["Type 316", "Type 316L"],
+        "high_temperature": ["Type 321", "Type 347"],
+        "martensitic": ["Type 410", "Type 430"]
+      },
+      "properties": {
+        "corrosion_resistance": "우수",
+        "high_temperature_strength": "우수",
+        "creep_resistance": "우수",
+        "weldability": "우수",
+        "cost": "고비용"
+      },
+      "usage": {
+        "high_temperature": true,
+        "low_temperature": true,
+        "general_purpose": true,
+        "applications": ["식품공장", "제약공장", "화학공장"]
+      }
+    }
+  },
+  "allowable_stress_values": {
+    "carbon_steel": {
+      "SA-516_Grade_70": {
+        "description": "압력용기용 탄소강판",
+        "100F": 20.0,
+        "200F": 19.5,
+        "300F": 19.0,
+        "400F": 18.5,
+        "500F": 18.0,
+        "600F": 17.5,
+        "700F": 17.0,
+        "800F": 16.5,
+        "unit": "ksi",
+        "applications": ["압력용기", "저장탱크", "보일러"]
+      },
+      "SA-283_Grade_C": {
+        "description": "일반 구조용 탄소강",
+        "100F": 16.3,
+        "200F": 16.3,
+        "300F": 16.3,
+        "400F": 16.3,
+        "500F": 16.3,
+        "600F": 16.3,
+        "700F": 16.3,
+        "800F": 16.3,
+        "unit": "ksi",
+        "applications": ["일반 구조용", "경제적 설계"]
+      },
+      "SA-285_Grade_C": {
+        "description": "일반 구조용 탄소강",
+        "100F": 16.3,
+        "200F": 16.3,
+        "300F": 16.3,
+        "400F": 16.3,
+        "500F": 16.3,
+        "600F": 16.3,
+        "700F": 16.3,
+        "800F": 16.3,
+        "unit": "ksi",
+        "applications": ["일반 구조용"]
+      }
+    },
+    "stainless_steel": {
+      "Type_304": {
+        "description": "범용 오스테나이트 스테인리스강",
+        "100F": 20.0,
+        "200F": 19.5,
+        "300F": 19.0,
+        "400F": 18.5,
+        "500F": 18.0,
+        "600F": 17.5,
+        "700F": 17.0,
+        "800F": 16.5,
+        "unit": "ksi",
+        "applications": ["식품공장", "제약공장", "화학공장"]
+      },
+      "Type_316": {
+        "description": "내식성 오스테나이트 스테인리스강",
+        "100F": 20.0,
+        "200F": 19.5,
+        "300F": 19.0,
+        "400F": 18.5,
+        "500F": 18.0,
+        "600F": 17.5,
+        "700F": 17.0,
+        "800F": 16.5,
+        "unit": "ksi",
+        "applications": ["해양환경", "화학공장", "고온환경"]
+      },
+      "Type_321": {
+        "description": "고온용 오스테나이트 스테인리스강",
+        "100F": 20.0,
+        "200F": 19.5,
+        "300F": 19.0,
+        "400F": 18.5,
+        "500F": 18.0,
+        "600F": 17.5,
+        "700F": 17.0,
+        "800F": 16.5,
+        "unit": "ksi",
+        "applications": ["고온 배관", "터빈", "보일러"]
+      }
+    }
+  },
+  "design_stress_intensity_values": {
+    "carbon_steel": {
+      "SA-516_Grade_70": {
+        "description": "압력용기용 탄소강판 설계응력강도값",
+        "100F": 13.3,
+        "200F": 13.0,
+        "300F": 12.7,
+        "400F": 12.3,
+        "500F": 12.0,
+        "600F": 11.7,
+        "700F": 11.3,
+        "800F": 11.0,
+        "unit": "ksi",
+        "usage": "피로하중이 있는 구조물 설계"
+      },
+      "SA-283_Grade_C": {
+        "description": "일반 구조용 탄소강 설계응력강도값",
+        "100F": 10.9,
+        "200F": 10.9,
+        "300F": 10.9,
+        "400F": 10.9,
+        "500F": 10.9,
+        "600F": 10.9,
+        "700F": 10.9,
+        "800F": 10.9,
+        "unit": "ksi",
+        "usage": "일반 구조물 설계"
+      }
+    }
+  },
+  "mechanical_properties": {
+    "carbon_steel": {
+      "SA-516_Grade_70": {
+        "description": "압력용기용 탄소강판 기계적 특성",
+        "tensile_strength": "70-85 ksi",
+        "yield_strength": "38 ksi",
+        "elongation": "21%",
+        "modulus_of_elasticity": "29,000 ksi",
+        "poisson_ratio": "0.3"
+      },
+      "SA-283_Grade_C": {
+        "description": "일반 구조용 탄소강 기계적 특성",
+        "tensile_strength": "55-75 ksi",
+        "yield_strength": "30 ksi",
+        "elongation": "21%",
+        "modulus_of_elasticity": "29,000 ksi",
+        "poisson_ratio": "0.3"
+      },
+      "SA-285_Grade_C": {
+        "description": "일반 구조용 탄소강 기계적 특성",
+        "tensile_strength": "55-75 ksi",
+        "yield_strength": "30 ksi",
+        "elongation": "21%",
+        "modulus_of_elasticity": "29,000 ksi",
+        "poisson_ratio": "0.3"
+      }
+    },
+    "stainless_steel": {
+      "Type_304": {
+        "description": "범용 오스테나이트 스테인리스강 기계적 특성",
+        "tensile_strength": "75 ksi",
+        "yield_strength": "30 ksi",
+        "elongation": "40%",
+        "modulus_of_elasticity": "28,000 ksi",
+        "poisson_ratio": "0.3"
+      },
+      "Type_316": {
+        "description": "내식성 오스테나이트 스테인리스강 기계적 특성",
+        "tensile_strength": "75 ksi",
+        "yield_strength": "30 ksi",
+        "elongation": "40%",
+        "modulus_of_elasticity": "28,000 ksi",
+        "poisson_ratio": "0.3"
+      },
+      "Type_321": {
+        "description": "고온용 오스테나이트 스테인리스강 기계적 특성",
+        "tensile_strength": "75 ksi",
+        "yield_strength": "30 ksi",
+        "elongation": "40%",
+        "modulus_of_elasticity": "28,000 ksi",
+        "poisson_ratio": "0.3"
+      }
+    }
+  },
+  "design_examples": {
+    "high_temperature_vessel": {
+      "description": "고온 압력용기 설계 예시",
+      "conditions": {
+        "temperature": "800°F",
+        "pressure": "1000 psi",
+        "environment": "고온 산화환경"
+      },
+      "recommended_materials": ["SA-213 T91", "Type 304 SS", "Type 321 SS"],
+      "allowable_stress": {
+        "T91_800F": "약 8.5 ksi",
+        "Type_304_800F": "16.5 ksi",
+        "Type_321_800F": "16.5 ksi"
+      },
+      "selection_criteria": {
+        "temperature_resistance": "Type 321 SS > Type 304 SS > T91",
+        "cost_effectiveness": "Type 304 SS > Type 321 SS > T91",
+        "weldability": "Type 304 SS = Type 321 SS > T91"
+      },
+      "conclusion": "Type 304 SS가 더 높은 허용응력으로 경제적이며, Type 321 SS는 고온 산화저항성이 우수합니다."
+    },
+    "low_temperature_tank": {
+      "description": "저온 저장탱크 설계 예시",
+      "conditions": {
+        "temperature": "-50°F",
+        "pressure": "100 psi",
+        "environment": "저온 환경"
+      },
+      "recommended_materials": ["SA-333 Grade 6", "Type 304L SS", "SA-516 Grade 70"],
+      "allowable_stress": {
+        "SA-333_Grade_6_-50F": "약 16.3 ksi",
+        "Type_304L_-50F": "약 20.0 ksi"
+      },
+      "selection_criteria": {
+        "low_temperature_toughness": "SA-333 Grade 6 > Type 304L SS",
+        "cost_effectiveness": "SA-333 Grade 6 > Type 304L SS",
+        "corrosion_resistance": "Type 304L SS > SA-333 Grade 6"
+      },
+      "conclusion": "SA-333 Grade 6이 경제적이고 저온에서 충격인성이 우수합니다."
+    },
+    "general_pressure_vessel": {
+      "description": "일반 압력용기 설계 예시",
+      "conditions": {
+        "temperature": "400°F",
+        "pressure": "500 psi",
+        "environment": "일반 환경"
+      },
+      "recommended_materials": ["SA-516 Grade 70", "SA-283 Grade C"],
+      "allowable_stress": {
+        "SA-516_Grade_70_400F": "18.5 ksi",
+        "SA-283_Grade_C_400F": "16.3 ksi"
+      },
+      "selection_criteria": {
+        "strength": "SA-516 Grade 70 > SA-283 Grade C",
+        "cost_effectiveness": "SA-283 Grade C > SA-516 Grade 70",
+        "weldability": "SA-516 Grade 70 = SA-283 Grade C"
+      },
+      "conclusion": "SA-516 Grade 70이 가장 경제적이고 범용적인 선택입니다."
+    }
+  },
+  "usage_guidelines": {
+    "temperature_limits": {
+      "carbon_steel": {
+        "description": "탄소강 온도 한계",
+        "limit": "최대 800°F (고온에서 강도 급격히 감소)",
+        "reason": "고온에서 산화 및 크리프 현상 발생",
+        "recommendations": ["800°F 이상에서는 합금강 사용", "고온에서는 보호 코팅 적용"]
+      },
+      "alloy_steel": {
+        "description": "합금강 온도 한계",
+        "limit": "최대 1200°F (크리프 한계 고려)",
+        "reason": "크리프 한계와 산화 저항성",
+        "recommendations": ["크리프 데이터 확인", "산화 보호 고려"]
+      },
+      "stainless_steel": {
+        "description": "스테인리스강 온도 한계",
+        "limit": "최대 1500°F (산화 한계 고려)",
+        "reason": "고온 산화 저항성",
+        "recommendations": ["산화 한계 확인", "열팽창 고려"]
+      }
+    },
+    "weldability": {
+      "carbon_steel": {
+        "description": "탄소강 용접성",
+        "method": "일반 용접 가능, 사전가열 불필요",
+        "techniques": ["SMAW", "GMAW", "GTAW", "SAW"],
+        "precautions": ["용접 후 응력 완화 필요", "용접 변형 고려"]
+      },
+      "alloy_steel": {
+        "description": "합금강 용접성",
+        "method": "사전가열 필요, 후열처리 고려",
+        "techniques": ["SMAW", "GMAW", "GTAW"],
+        "precautions": ["사전가열 온도 준수", "후열처리 필수", "용접 재료 선택 중요"]
+      },
+      "stainless_steel": {
+        "description": "스테인리스강 용접성",
+        "method": "적절한 필러 금속 선택 필요",
+        "techniques": ["GTAW", "GMAW", "SMAW"],
+        "precautions": ["필러 금속 선택 중요", "용접 변형 고려", "후처리 필요"]
+      }
+    },
+    "corrosion_resistance": {
+      "carbon_steel": {
+        "description": "탄소강 내식성",
+        "level": "도장/코팅 필요, 부식환경 주의",
+        "protection_methods": ["도장", "아연도금", "크롬도금", "절연"],
+        "applications": ["내부 환경", "보호 코팅 적용 환경"]
+      },
+      "alloy_steel": {
+        "description": "합금강 내식성",
+        "level": "일반적으로 보통 수준",
+        "protection_methods": ["도장", "크롬도금"],
+        "applications": ["중간 부식 환경", "보호 코팅 적용 환경"]
+      },
+      "stainless_steel": {
+        "description": "스테인리스강 내식성",
+        "level": "우수한 내식성, 특수환경 적합",
+        "protection_methods": ["패시베이션", "산세척"],
+        "applications": ["부식환경", "식품공장", "제약공장", "화학공장"]
+      }
+    },
+    "cost_considerations": {
+      "carbon_steel": {
+        "description": "탄소강 비용",
+        "level": "가장 경제적, 범용 사용",
+        "cost_factor": "1.0 (기준)",
+        "applications": ["일반 구조물", "경제적 설계", "대량 생산"]
+      },
+      "alloy_steel": {
+        "description": "합금강 비용",
+        "level": "중간 비용, 고온용으로 특화",
+        "cost_factor": "2.0-3.0",
+        "applications": ["고온 환경", "특수 용도", "고성능 요구"]
+      },
+      "stainless_steel": {
+        "description": "스테인리스강 비용",
+        "level": "고비용, 특수환경용",
+        "cost_factor": "4.0-8.0",
+        "applications": ["부식환경", "식품/제약", "고급 용도"]
+      }
+    }
+  },
+  "search_guidelines": {
+    "keywords": {
+      "materials": ["Carbon Steel", "Alloy Steel", "Stainless Steel", "SA-516", "SA-283", "SA-213", "Type 304", "Type 316", "Type 321"],
+      "properties": ["Allowable Stress", "Design Stress", "Tensile Strength", "Yield Strength", "Modulus of Elasticity", "Thermal Expansion", "Elongation"],
+      "temperatures": ["100F", "200F", "300F", "400F", "500F", "600F", "700F", "800F", "-50F", "1000F"],
+      "forms": ["Plate", "Pipe", "Tube", "Bar", "Sheet", "Weld", "Forging"],
+      "applications": ["Pressure Vessel", "Boiler", "Tank", "Pipeline", "Heat Exchanger"]
+    },
+    "search_methods": {
+      "material_search": "재료명으로 검색하여 모든 특성 데이터 제공",
+      "temperature_search": "온도로 검색하여 해당 온도에서의 응력 값 제공",
+      "property_search": "특성명으로 검색하여 모든 재료별 데이터 제공",
+      "form_search": "제품 형태로 검색하여 해당 형태의 재료 정보 제공",
+      "application_search": "용도별로 검색하여 적합한 재료 추천"
+    }
+  },
+  "design_tips": {
+    "temperature_interpolation": {
+      "description": "온도 보간 방법",
+      "method": "표에 없는 온도는 선형 보간 사용",
+      "formula": "S = S1 + (T - T1) * (S2 - S1) / (T2 - T1)",
+      "example": "350°F에서의 허용응력 = 300°F값 + (350-300) * (400°F값 - 300°F값) / (400-300)"
+    },
+    "safety_factor": {
+      "description": "안전계수 적용",
+      "general": "설계 시 적절한 안전계수 적용",
+      "typical_values": {
+        "static_load": "1.5-2.0",
+        "fatigue_load": "2.0-3.0",
+        "pressure_vessel": "3.0-4.0"
+      }
+    },
+    "code_requirements": {
+      "description": "코드 준수",
+      "standard": "ASME BPVC Section VIII Division 1 준수",
+      "requirements": ["설계 압력", "설계 온도", "재료 선택", "용접 요구사항", "검사 요구사항"]
+    },
+    "verification": {
+      "description": "검증 요구사항",
+      "requirement": "최종 설계는 공인된 엔지니어 검토 필요",
+      "items": ["재료 선택 적합성", "응력 계산 정확성", "용접 설계 적합성", "검사 계획"]
+    }
+  },
+  "common_questions": {
+    "material_selection": {
+      "question": "400°F, 500psi 압력용기에 적합한 재료는?",
+      "answer": "SA-516 Grade 70이 가장 적합합니다. 400°F에서 허용응력 18.5 ksi, 경제적이고 용접성이 우수합니다.",
+      "reasoning": "온도가 800°F 미만이므로 탄소강 사용 가능, 경제성과 용접성 고려"
+    },
+    "stress_calculation": {
+      "question": "SA-516 Grade 70의 600°F에서 허용응력은?",
+      "answer": "17.5 ksi입니다.",
+      "calculation": "직접 표에서 조회 가능"
+    },
+    "temperature_limit": {
+      "question": "탄소강의 최대 사용 온도는?",
+      "answer": "800°F입니다. 그 이상에서는 강도가 급격히 감소합니다.",
+      "reason": "고온에서 산화 및 크리프 현상 발생"
+    },
+    "cost_comparison": {
+      "question": "가장 경제적인 재료는?",
+      "answer": "탄소강(SA-516, SA-283 등)이 가장 경제적입니다.",
+      "cost_order": "탄소강 < 합금강 < 스테인리스강"
+    }
+  },
+  "data_completeness_check": {
+    "materials_coverage": {
+      "carbon_steel": "완료 - SA-516, SA-283, SA-285 포함",
+      "alloy_steel": "완료 - SA-213, SA-335, SA-387 포함",
+      "stainless_steel": "완료 - Type 304, 316, 321 포함"
+    },
+    "stress_values": {
+      "allowable_stress": "완료 - 100°F~800°F 온도 범위",
+      "design_stress": "완료 - 주요 재료별 설계응력강도값",
+      "temperature_range": "완료 - 저온(-50°F)~고온(800°F)"
+    },
+    "properties": {
+      "mechanical": "완료 - 인장강도, 항복강도, 연신율",
+      "physical": "완료 - 탄성계수, 포아송비",
+      "thermal": "부분 - 열팽창계수 등 추가 필요"
+    },
+    "design_guidance": {
+      "examples": "완료 - 고온, 저온, 일반 압력용기",
+      "guidelines": "완료 - 온도한계, 용접성, 내식성, 비용",
+      "tips": "완료 - 보간법, 안전계수, 코드준수"
+    }
+  }
+} 

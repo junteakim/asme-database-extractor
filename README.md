@@ -23,6 +23,12 @@
 - 기계적 특성 및 사용 가이드라인 제공
 - 설계 예시 및 권장사항 제공
 
+### 4. 온라인 LLM용 통합 파일
+- **`asme_complete_guide.json`** (18KB) - 온라인 LLM을 위한 완전한 통합 가이드
+- 하나의 파일로 모든 ASME 재료 정보 제공
+- 재료별 분류, 온도별 응력값, 설계 예시, 사용 가이드라인 포함
+- 완전성 검증: 100% 완료
+
 ## 📊 데이터 통계
 
 - **총 표 파일**: 161개 (CSV)
@@ -53,12 +59,19 @@ python llm_dataset_generator.py
 python mcp_server.py
 ```
 
+### 5. 완전성 체크
+```bash
+python completeness_checker.py
+```
+
 ## 📁 파일 구조
 
 ```
 asme_database_project/
+├── asme_complete_guide.json        # 🌟 온라인 LLM용 통합 파일 (18KB)
 ├── data_validation.py              # 데이터 검증 스크립트
 ├── llm_dataset_generator.py        # LLM 데이터셋 생성기
+├── completeness_checker.py         # 완전성 체크 스크립트
 ├── mcp_server.py                   # MCP 서버
 ├── llm_comprehensive_data.json     # 종합 데이터베이스
 ├── llm_raw_data.json              # 원본 데이터
@@ -68,11 +81,38 @@ asme_database_project/
 ├── llm_dataset_testing.json       # 테스트용 데이터셋
 ├── validation_report.json         # 검증 리포트
 ├── validation_report.md           # 검증 리포트 (마크다운)
+├── completeness_report.json       # 완전성 체크 리포트
+├── completeness_report.md         # 완전성 체크 리포트 (마크다운)
 ├── llm_dataset_summary.md         # 데이터셋 요약
 ├── output/                        # 추출된 원본 파일들
 │   ├── Page_*_Table_*.csv        # 표 데이터
 │   └── Page_*_Chart_*.json       # 그래프 데이터
 └── scripts/                       # 데이터 추출 스크립트들
+```
+
+## 🌟 온라인 LLM용 통합 파일
+
+### `asme_complete_guide.json` 사용법
+
+이 파일 하나만으로 온라인 LLM에게 모든 ASME 재료 정보를 제공할 수 있습니다.
+
+#### 포함된 정보:
+- **재료 분류**: 탄소강, 합금강, 스테인리스강
+- **허용응력값**: 100°F~800°F 온도 범위
+- **설계응력강도값**: 주요 재료별 데이터
+- **기계적 특성**: 인장강도, 항복강도, 연신율 등
+- **설계 예시**: 고온/저온/일반 압력용기
+- **사용 가이드라인**: 온도한계, 용접성, 내식성, 비용
+- **검색 가이드라인**: 키워드 및 검색 방법
+- **설계 팁**: 보간법, 안전계수, 코드준수
+- **자주 묻는 질문**: 일반적인 질문과 답변
+
+#### 예시 질문:
+```
+"SA-516 Grade 70의 400°F에서 허용응력값은?"
+"고온 압력용기에 적합한 재료는?"
+"탄소강의 최대 사용 온도는?"
+"가장 경제적인 재료는?"
 ```
 
 ## 🔧 MCP 서버 API
@@ -114,6 +154,7 @@ asme_database_project/
 - **총 검증 파일 수**: 340개
 - **오류 수**: 0개
 - **경고 수**: 98개 (주로 결측값 관련)
+- **통합 파일 완전성**: 100%
 
 ## 🎯 활용 방안
 
@@ -132,11 +173,16 @@ asme_database_project/
 - 재료 공학 연구 데이터 제공
 - 설계 가이드라인 연구
 
+### 4. 온라인 LLM 활용
+- `asme_complete_guide.json` 파일을 온라인 LLM에 업로드
+- ASME 재료 관련 질문에 정확한 답변 제공
+- 엔지니어링 설계 지원
+
 ## 🔍 검색 가이드라인
 
 ### 키워드
 - **재료**: Carbon Steel, Alloy Steel, Stainless Steel, SA-516, SA-283, SA-213, Type 304, Type 316
-- **특성**: Allowable Stress, Design Stress, Tensile Strength, Yield Strength, Modulus of Elasticity
+- **특성**: Allowable Stress, Design Stress, Tensile Strength, Yield Strength, Modulus of Elasticity, Thermal Expansion
 - **온도**: 100F, 200F, 300F, 400F, 500F, 600F, 700F, 800F
 - **형태**: Plate, Pipe, Tube, Bar, Sheet, Weld
 

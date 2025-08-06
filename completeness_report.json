@@ -1,0 +1,59 @@
+{
+  "check_date": "2025-08-06",
+  "overall_score": 99.99714285714286,
+  "details": {
+    "metadata": {
+      "complete": true,
+      "score": 100,
+      "total": 100,
+      "percentage": 100,
+      "missing": []
+    },
+    "materials": {
+      "complete": false,
+      "score": 99.99,
+      "total": 100,
+      "percentage": 99.99,
+      "missing": []
+    },
+    "stress_values": {
+      "complete": true,
+      "score": 100,
+      "total": 100,
+      "percentage": 100,
+      "missing": []
+    },
+    "properties": {
+      "complete": true,
+      "score": 100,
+      "total": 100,
+      "percentage": 100,
+      "missing": []
+    },
+    "design_examples": {
+      "complete": false,
+      "score": 99.99,
+      "total": 100,
+      "percentage": 99.99,
+      "missing": []
+    },
+    "guidelines": {
+      "complete": true,
+      "score": 100,
+      "total": 100,
+      "percentage": 100,
+      "missing": []
+    },
+    "additional_features": {
+      "complete": true,
+      "score": 100,
+      "total": 100,
+      "percentage": 100,
+      "missing": []
+    }
+  },
+  "recommendations": [
+    "materials 섹션 보완 필요",
+    "design_examples 섹션 보완 필요"
+  ]
+}
