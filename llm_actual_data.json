@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "title": "ASME BPVC 2023 Section II Part D - 실제 추출 데이터",
+    "extraction_date": "2025-08-06",
+    "source": "ASME BPVC 2023 Section II Part D (Customary)",
+    "total_files": {
+      "csv": 169,
+      "json": 184
+    },
+    "version": "1.0"
+  },
+  "extracted_materials": {
+    "carbon_steel": {
+      "count": 3,
+      "specifications": [],
+      "product_forms": [
+        "Bar",
+        "Plate"
+      ],
+      "sample_data": [
+        {
+          "file": "Page_60_Table_1.csv",
+          "data": [
+            {
+              "1": 2,
+              "Carbon steel": "Carbon steel",
+              "Bar": "Wld. pipe",
+              "SA": "SA",
+              "–": "–",
+              "675": 134,
+              "55": "A283C",
+              "…": "K02401",
+              "….1": " …",
+              "….2": "…",
+              "1.1": 1,
+              "1.2": 1
+            },
+            {
+              "1": 3,
+              "Carbon steel": "Carbon steel",
+              "Bar": "Plate",
+              "SA": "SA",
+              "–": "–",
+              "675": 283,
+              "55": "C",
+              "…": "K02401",
+              "….1": " …",
+              "….2": "…",
+              "1.1": 1,
+              "1.2": 1
+            },
+            {
+              "1": 4,
+              "Carbon steel": "Carbon steel",
+              "Bar": "Plate",
+              "SA": "SA",
+              "–": "–",
+              "675": 285,
+              "55": "C",
+              "…": "K02801",
+              "….1": " …",
+              "….2": "…",
+              "1.1": 1,
+              "1.2": 1
+            },
+            {
+              "1": 5,
+              "Carbon steel": "Carbon steel",
+              "Bar": "Smls. & wld. pipe",
+              "SA": "SA",
+              "–": "–",
+              "675": 333,
+              "55": "1",
+              "…": "K03008",
+              "….1": " …",
+              "….2": "…",
+              "1.1": 1,
+              "1.2": 1
+            },
+            {
+              "1": 6,
+              "Carbon steel": "Carbon steel",
+              "Bar": "Smls. & wld. tube",
+              "SA": "SA",
+              "–": "–",
+              "675": 334,
+              "55": "1",
+              "…": "K03008",
+              "….1": " …",
+              "….2": "…",
+              "1.1": 1,
+              "1.2": 1
+            },
+            {
+              "1": 7,
+              "Carbon steel": "Carbon steel",
+              "Bar": "Wld. tube",
+              "SA": "SA",
+              "–": "–",
+              "675": 334,
+              "55": "1",
+              "…": "K03008",
+              "….1": " …",
+              "….2": "…",
+              "1.1": 1,
+              "1.2": 1
+            },
+            {
+              "1": 8,
+              "Carbon steel": "Carbon steel",
+              "Bar": "Plate",
+              "SA": "SA",
+              "–": "–",
+              "675": 516,
+              "55": "55",
+              "…": "K01800",
+              "….1": " …",
+              "….2": "…",
+              "1.1": 1,
+              "1.2": 1
+            },
+            {
+              "1": 9,
+              "Carbon steel": "Carbon steel",
+              "Bar": "Smls. pipe",
+              "SA": "SA",
+              "–": "–",
+              "675": 524,
+              "55": "II",
+              "…": "K02104",
+              "….1": " …",
+              "….2": "…",
+              "1.1": 1,
+              "1.2": 1
+            },
+            {
+              "1": 10,
+              "Carbon steel": "Carbon steel",
+              "Bar": "Wld. pipe",
+              "SA": "SA",
+              "–": "–",
+              "675": 671,
+              "55": "CA55",
+              "…": "K02801",
+              "….1": " …",
+              "….2": "…",
+              "1.1": 1,
+              "1.2": 1
+            },
+            {
+              "1": 11,
+              "Carbon steel": "Carbon steel",
+              "Bar": "Wld. pipe",
+              "SA": "SA",
+              "–": "–",
+              "675": 671,
+              "55": "CE55",
+              "…": "K02202",
+              "….1": " …",
+              "….2": "…",
+              "1.1": 1,
+              "1.2": 1
+            }
+          ]
+        },
+        {
+          "file": "Page_60_Table_2.csv",
+          "data": [
+            {
+              "17": 18,
+              "Carbon steel": "Carbon steel",
+              "Plate": "Bar",
+              "SA/EN 10028": "SA",
+              "–": "–",
+              "3 P275NH": 36,
+              "…": "…",
+              "….1": "K02600",
+              "≤": " …",
+              "2": "…",
+              "/": "1",
+              "4": 1.0,
+              "1": NaN,
+              "1.1": NaN
+            },
+            {
+              "17": 19,
+              "Carbon steel": "Carbon steel",
+              "Plate": "Plate, sheet",
+              "SA/EN 10028": "SA",
+              "–": "–",
+              "3 P275NH": 36,
+              "…": "…",
+              "….1": "K02600",
+              "≤": " …",
+              "2": "…",
+              "/": "1",
+              "4": 1.0,
+              "1": NaN,
+              "1.1": NaN
+            },
+            {
+              "17": 20,
+              "Carbon steel": "Carbon steel",
+              "Plate": "Plate, sheet",
+              "SA/EN 10028": "SA",
+              "–": "–",
+              "3 P275NH": 662,
+              "…": "A",
+              "….1": "K01701",
+              "≤": " …",
+              "2": "…",
+              "/": "1",
+              "4": 1.0,
+              "1": NaN,
+              "1.1": NaN
+            },
+            {
+              "17": 21,
+              "Carbon steel": "Carbon steel",
+              "Plate": "Sheet, strip",
+              "SA/EN 10028": "SA",
+              "–": "–",
+              "3 P275NH": 1011,
+              "…": "36",
+              "….1": "SS",
+              "≤": "Type 2",
+              "2": "t",
+              "/": " ≤",
+              "4": 0.23,
+              "1": "…",
+              "1.1": "…"
+            }
+          ]
+        },
+        {
+          "file": "Page_60_Table_3.csv",
+          "data": [
+            {
+              "22": 23,
+              "Carbon steel": "Carbon steel",
+              "Plate, bar, shapes": "Plate, bar, shapes",
+              "SA/IS 2062": "SA/IS 2062",
+              "E250A": "E250BR",
+              "…": "…",
+              "….1": "…",
+              "t": "t",
+              " > 1": " > 1",
+              "/": 1,
+              "2": "/",
+              "1": 1,
+              "1.1": 1
+            }
+          ]
+        }
+      ]
+    },
+    "stainless_steel": {
+      "count": 3,
+      "grades": [
+        "Type 304",
+        "Type 316",
+        "Type 321",
+        "Type 347"
+      ],
+      "sample_data": [
+        {
+          "file": "Page_84_Table_4.csv",
+          "data": [
+            {
+              "18": 19,
+              "1Cr": "1Cr",
+              "–": "–",
+              "/": 1,
+              "5": "/",
+              "Mo": "Mo",
+              "Forgings": "Forgings",
+              "SA": "SA",
+              "–.1": "–",
+              "372": 372,
+              "E": "F",
+              "K13047 55": "G41350 55",
+              "…": "…",
+              "….1": "…",
+              "….2": "…"
+            }
+          ]
+        },
+        {
+          "file": "Page_10_Table_3.csv",
+          "data": [
+            {
+              "E-100.4-1": "E-100.4-2",
+              "S": "S",
+              "mt": " —",
+              " Allowable Stress Intensity Values, ksi, Type 304 SS": " Allowable Stress Intensity Values, ksi, Type 316 SS",
+              " 30-YS, 75-UTS (30-YS, 70-UTS)": " —",
+              "1348": " 30-YS, 75-UTS (30-YS, 70-UTS)",
+              "Unnamed: 6": 1349
+            }
+          ]
+        },
+        {
+          "file": "Page_10_Table_7.csv",
+          "data": [
+            {
+              "E-100.18-11": "E-100.18-12",
+              "Average Isochronous Stress": "Average Isochronous Stress",
+              "Strain Curves for Type 304 SS at 1,300°F . . . . . . . . . . . . . . . . . . .": "–",
+              "1391": "Strain Curves for Type 304 SS at 1,350°F . . . . . . . . . . . . . . . . . . .",
+              "Unnamed: 4": 1392
+            },
+            {
+              "E-100.18-11": "E-100.18-13",
+              "Average Isochronous Stress": "Average Isochronous Stress",
+              "Strain Curves for Type 304 SS at 1,300°F . . . . . . . . . . . . . . . . . . .": "–",
+              "1391": "Strain Curves for Type 304 SS at 1,400°F . . . . . . . . . . . . . . . . . . .",
+              "Unnamed: 4": 1393
+            },
+            {
+              "E-100.18-11": "E-100.18-14",
+              "Average Isochronous Stress": "Average Isochronous Stress",
+              "Strain Curves for Type 304 SS at 1,300°F . . . . . . . . . . . . . . . . . . .": "–",
+              "1391": "Strain Curves for Type 304 SS at 1,450°F . . . . . . . . . . . . . . . . . . .",
+              "Unnamed: 4": 1394
+            },
+            {
+              "E-100.18-11": "E-100.18-15",
+              "Average Isochronous Stress": "Average Isochronous Stress",
+              "Strain Curves for Type 304 SS at 1,300°F . . . . . . . . . . . . . . . . . . .": "–",
+              "1391": "Strain Curves for Type 304 SS at 1,500°F . . . . . . . . . . . . . . . . . . .",
+              "Unnamed: 4": 1395
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "common_specifications": [],
+  "product_forms": [
+    "Bar",
+    "Plate"
+  ],
+  "usage_examples": {
+    "material_selection": {
+      "high_temperature": [
+        "SA-213 T91: 크리프 저항성이 우수한 합금강 (800°F 이상)",
+        "SA-213 T92: 고온 강도가 우수한 합금강 (800°F 이상)",
+        "Type 304 SS: 내산화성이 우수한 스테인리스강 (800°F 이상)"
+      ],
+      "low_temperature": [
+        "SA-333 Grade 6: 저온 인성이 우수한 탄소강 (-50°F 이하)",
+        "SA-516 Grade 70: 저온용 탄소강 (-50°F 이하)",
+        "Type 304L SS: 저온용 스테인리스강 (-50°F 이하)"
+      ],
+      "general_purpose": [
+        "SA-516 Grade 70: 범용 탄소강 (상온~600°F)",
+        "SA-283 Grade C: 경제적인 탄소강 (상온~600°F)",
+        "Type 304 SS: 범용 스테인리스강 (상온~600°F)"
+      ]
+    },
+    "design_considerations": {
+      "allowable_stress": "온도에 따라 감소하는 허용응력 값 사용",
+      "design_stress_intensity": "온도에 따라 감소하는 설계응력 강도 값 사용",
+      "mechanical_properties": "인장강도, 항복강도, 연신율 등 고려",
+      "physical_properties": "탄성계수, 열팽창계수 등 고려"
+    }
+  },
+  "search_guidelines": {
+    "keywords": {
+      "materials": [
+        "Carbon Steel",
+        "Alloy Steel",
+        "Stainless Steel",
+        "SA-516",
+        "SA-283",
+        "SA-213"
+      ],
+      "properties": [
+        "Allowable Stress",
+        "Design Stress",
+        "Tensile Strength",
+        "Yield Strength"
+      ],
+      "temperatures": [
+        "100F",
+        "200F",
+        "300F",
+        "400F",
+        "500F",
+        "600F",
+        "700F",
+        "800F"
+      ],
+      "forms": [
+        "Plate",
+        "Pipe",
+        "Tube",
+        "Bar",
+        "Sheet"
+      ]
+    },
+    "file_patterns": {
+      "tables": "Page_*_Table_*.csv",
+      "charts": "Page_*_Chart_*.json"
+    }
+  }
+}

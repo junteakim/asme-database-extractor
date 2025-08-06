@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "split": "testing",
+    "samples": 8,
+    "generated_date": "2025-08-06"
+  },
+  "data": [
+    {
+      "question": "SA-285_Grade_C 재료의 600F에서의 허용응력값은 얼마인가요?",
+      "answer": "SA-285_Grade_C 재료의 600F에서의 허용응력값은 16.3 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "carbon_steel",
+      "temperature": "600F"
+    },
+    {
+      "question": "SA-285_Grade_C 재료의 300F에서의 허용응력값은 얼마인가요?",
+      "answer": "SA-285_Grade_C 재료의 300F에서의 허용응력값은 16.3 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "carbon_steel",
+      "temperature": "300F"
+    },
+    {
+      "question": "general_pressure_vessel에 권장되는 재료는 무엇인가요?",
+      "answer": "general_pressure_vessel에 권장되는 재료: SA-516 Grade 70",
+      "category": "recommended_materials",
+      "design_type": "general_pressure_vessel"
+    },
+    {
+      "question": "Type_304 재료의 800F에서의 허용응력값은 얼마인가요?",
+      "answer": "Type_304 재료의 800F에서의 허용응력값은 16.5 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "stainless_steel",
+      "temperature": "800F"
+    },
+    {
+      "question": "high_temperature_vessel 설계의 결론은 무엇인가요?",
+      "answer": "Type 304 SS가 더 높은 허용응력으로 경제적",
+      "category": "design_conclusion",
+      "design_type": "high_temperature_vessel"
+    },
+    {
+      "question": "Type_321 재료의 100F에서의 허용응력값은 얼마인가요?",
+      "answer": "Type_321 재료의 100F에서의 허용응력값은 20.0 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "stainless_steel",
+      "temperature": "100F"
+    },
+    {
+      "question": "high_temperature_vessel에 권장되는 재료는 무엇인가요?",
+      "answer": "high_temperature_vessel에 권장되는 재료: SA-213 T91, Type 304 SS",
+      "category": "recommended_materials",
+      "design_type": "high_temperature_vessel"
+    },
+    {
+      "question": "stainless_steel의 corrosion_resistance은 어떻게 되나요?",
+      "answer": "stainless_steel의 corrosion_resistance: 우수한 내식성, 특수환경 적합",
+      "category": "usage_guideline",
+      "material_type": "stainless_steel",
+      "guideline_type": "corrosion_resistance"
+    }
+  ]
+}

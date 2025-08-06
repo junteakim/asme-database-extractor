@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "split": "validation",
+    "samples": 15,
+    "generated_date": "2025-08-06"
+  },
+  "data": [
+    {
+      "question": "SA-516_Grade_70 재료의 400F에서의 허용응력값은 얼마인가요?",
+      "answer": "SA-516_Grade_70 재료의 400F에서의 허용응력값은 18.5 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "carbon_steel",
+      "temperature": "400F"
+    },
+    {
+      "question": "SA-516_Grade_70 재료의 800F에서의 허용응력값은 얼마인가요?",
+      "answer": "SA-516_Grade_70 재료의 800F에서의 허용응력값은 16.5 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "carbon_steel",
+      "temperature": "800F"
+    },
+    {
+      "question": "Type_321 재료의 700F에서의 허용응력값은 얼마인가요?",
+      "answer": "Type_321 재료의 700F에서의 허용응력값은 17.0 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "stainless_steel",
+      "temperature": "700F"
+    },
+    {
+      "question": "Type_316 재료의 300F에서의 허용응력값은 얼마인가요?",
+      "answer": "Type_316 재료의 300F에서의 허용응력값은 19.0 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "stainless_steel",
+      "temperature": "300F"
+    },
+    {
+      "question": "Type_304 재료의 600F에서의 허용응력값은 얼마인가요?",
+      "answer": "Type_304 재료의 600F에서의 허용응력값은 17.5 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "stainless_steel",
+      "temperature": "600F"
+    },
+    {
+      "question": "Alloy Steel (합금강)의 주요 사양은 무엇인가요?",
+      "answer": "Alloy Steel (합금강)의 주요 사양은 SA-213, SA-335, SA-387입니다.",
+      "category": "material_specification",
+      "material_type": "alloy_steel"
+    },
+    {
+      "question": "SA-283_Grade_C 재료의 100F에서의 허용응력값은 얼마인가요?",
+      "answer": "SA-283_Grade_C 재료의 100F에서의 허용응력값은 16.3 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "carbon_steel",
+      "temperature": "100F"
+    },
+    {
+      "question": "SA-283_Grade_C 재료의 800F에서의 허용응력값은 얼마인가요?",
+      "answer": "SA-283_Grade_C 재료의 800F에서의 허용응력값은 16.3 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "carbon_steel",
+      "temperature": "800F"
+    },
+    {
+      "question": "SA-285_Grade_C 재료의 200F에서의 허용응력값은 얼마인가요?",
+      "answer": "SA-285_Grade_C 재료의 200F에서의 허용응력값은 16.3 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "carbon_steel",
+      "temperature": "200F"
+    },
+    {
+      "question": "SA-516_Grade_70 재료의 300F에서의 허용응력값은 얼마인가요?",
+      "answer": "SA-516_Grade_70 재료의 300F에서의 허용응력값은 19.0 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "carbon_steel",
+      "temperature": "300F"
+    },
+    {
+      "question": "Type_316 재료의 100F에서의 허용응력값은 얼마인가요?",
+      "answer": "Type_316 재료의 100F에서의 허용응력값은 20.0 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "stainless_steel",
+      "temperature": "100F"
+    },
+    {
+      "question": "SA-285_Grade_C 재료의 400F에서의 허용응력값은 얼마인가요?",
+      "answer": "SA-285_Grade_C 재료의 400F에서의 허용응력값은 16.3 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "carbon_steel",
+      "temperature": "400F"
+    },
+    {
+      "question": "SA-283_Grade_C 재료의 700F에서의 허용응력값은 얼마인가요?",
+      "answer": "SA-283_Grade_C 재료의 700F에서의 허용응력값은 16.3 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "carbon_steel",
+      "temperature": "700F"
+    },
+    {
+      "question": "Type_321 재료의 600F에서의 허용응력값은 얼마인가요?",
+      "answer": "Type_321 재료의 600F에서의 허용응력값은 17.5 ksi입니다.",
+      "category": "allowable_stress",
+      "material_type": "stainless_steel",
+      "temperature": "600F"
+    },
+    {
+      "question": "Stainless Steel (스테인리스강)의 주요 사양은 무엇인가요?",
+      "answer": "Stainless Steel (스테인리스강)의 주요 사양은 SA-240, SA-312, SA-358, SA-376, SA-409, SA-430, SA-479입니다.",
+      "category": "material_specification",
+      "material_type": "stainless_steel"
+    }
+  ]
+}

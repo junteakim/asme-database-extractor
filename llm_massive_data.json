@@ -1,0 +1,1145 @@
+{
+  "metadata": {
+    "title": "ASME BPVC 2023 Section II Part D - 대량 데이터베이스",
+    "extraction_date": "2025-08-06",
+    "source": "ASME BPVC 2023 Section II Part D (Customary)",
+    "total_tables": 161,
+    "total_charts": 179,
+    "version": "2.0",
+    "description": "실제 추출된 대량의 ASME BPVC 재료 데이터"
+  },
+  "data_statistics": {
+    "total_files": 161,
+    "large_tables": 54,
+    "material_distribution": {
+      "Carbon Steel": 230,
+      "Stainless Steel": 9,
+      "Alloy Steel": 1
+    },
+    "specification_distribution": {
+      "sa-508": 2,
+      "sa-533": 2,
+      "sa-541": 1
+    },
+    "product_form_distribution": {
+      "Bar": 6,
+      "Forging": 14,
+      "Plate": 22,
+      "Pipe": 11,
+      "Tube": 7,
+      "Sheet": 5
+    },
+    "temperature_data_count": 53,
+    "stress_data_count": 16
+  },
+  "actual_extracted_data": {
+    "large_tables": [
+      {
+        "file": "Page_60_Table_1.csv",
+        "rows": 15,
+        "columns": 12,
+        "size": 180,
+        "data": [
+          {
+            "1": 2,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Wld. pipe",
+            "SA": "SA",
+            "–": "–",
+            "675": 134,
+            "55": "A283C",
+            "…": "K02401",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 3,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Plate",
+            "SA": "SA",
+            "–": "–",
+            "675": 283,
+            "55": "C",
+            "…": "K02401",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 4,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Plate",
+            "SA": "SA",
+            "–": "–",
+            "675": 285,
+            "55": "C",
+            "…": "K02801",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 5,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Smls. & wld. pipe",
+            "SA": "SA",
+            "–": "–",
+            "675": 333,
+            "55": "1",
+            "…": "K03008",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 6,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Smls. & wld. tube",
+            "SA": "SA",
+            "–": "–",
+            "675": 334,
+            "55": "1",
+            "…": "K03008",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 7,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Wld. tube",
+            "SA": "SA",
+            "–": "–",
+            "675": 334,
+            "55": "1",
+            "…": "K03008",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 8,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Plate",
+            "SA": "SA",
+            "–": "–",
+            "675": 516,
+            "55": "55",
+            "…": "K01800",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 9,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Smls. pipe",
+            "SA": "SA",
+            "–": "–",
+            "675": 524,
+            "55": "II",
+            "…": "K02104",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 10,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Wld. pipe",
+            "SA": "SA",
+            "–": "–",
+            "675": 671,
+            "55": "CA55",
+            "…": "K02801",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 11,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Wld. pipe",
+            "SA": "SA",
+            "–": "–",
+            "675": 671,
+            "55": "CE55",
+            "…": "K02202",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 12,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Wld. pipe",
+            "SA": "SA",
+            "–": "–",
+            "675": 672,
+            "55": "A55",
+            "…": "K02801",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 13,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Wld. pipe",
+            "SA": "SA",
+            "–": "–",
+            "675": 672,
+            "55": "B55",
+            "…": "K02001",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 14,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Wld. pipe",
+            "SA": "SA",
+            "–": "–",
+            "675": 672,
+            "55": "C55",
+            "…": "K01800",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 15,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Wld. pipe",
+            "SA": "SA",
+            "–": "–",
+            "675": 672,
+            "55": "E55",
+            "…": "K02202",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          },
+          {
+            "1": 16,
+            "Carbon steel": "Carbon steel",
+            "Bar": "Sheet",
+            "SA": "SA",
+            "–": "–",
+            "675": 414,
+            "55": "C",
+            "…": "K02503",
+            "….1": " …",
+            "….2": "…",
+            "1.1": 1,
+            "1.2": 1
+          }
+        ]
+      },
+      {
+        "file": "Page_88_Table_3.csv",
+        "rows": 1,
+        "columns": 21,
+        "size": 21,
+        "data": [
+          {
+            "22": 23,
+            "1": 1,
+            "/": 1,
+            "4": "/",
+            "Cr": "Cr",
+            "–": "–",
+            "/.1": 1,
+            "2": "/",
+            "Mo": "Mo",
+            "–.1": "–",
+            "Si": "Si",
+            "Forgings": "Forged pipe",
+            "SA": "SA",
+            "–.2": "–",
+            "336": 369,
+            "F11": "FP11",
+            "K11597 1": "K11597",
+            "…": " …",
+            "4.1": "…",
+            "1.1": 4,
+            "Unnamed: 20": 1
+          }
+        ]
+      },
+      {
+        "file": "Page_84_Table_5.csv",
+        "rows": 1,
+        "columns": 15,
+        "size": 15,
+        "data": [
+          {
+            "22": 23,
+            "1Cr": "1Cr",
+            "–": "–",
+            "/": 1,
+            "5": "/",
+            "Mo": "Mo",
+            "Forgings": "Forgings",
+            "SA": "SA",
+            "–.1": "–",
+            "372": 372,
+            "F": "J",
+            "G41350 65": "K13548 65",
+            "…": "…",
+            "….1": "…",
+            "….2": "…"
+          }
+        ]
+      },
+      {
+        "file": "Page_84_Table_4.csv",
+        "rows": 1,
+        "columns": 15,
+        "size": 15,
+        "data": [
+          {
+            "18": 19,
+            "1Cr": "1Cr",
+            "–": "–",
+            "/": 1,
+            "5": "/",
+            "Mo": "Mo",
+            "Forgings": "Forgings",
+            "SA": "SA",
+            "–.1": "–",
+            "372": 372,
+            "E": "F",
+            "K13047 55": "G41350 55",
+            "…": "…",
+            "….1": "…",
+            "….2": "…"
+          }
+        ]
+      },
+      {
+        "file": "Page_88_Table_2.csv",
+        "rows": 2,
+        "columns": 17,
+        "size": 34,
+        "data": [
+          {
+            "10": 11,
+            "1Cr": "1Cr",
+            "–": "–",
+            "/": "1",
+            "2": "/",
+            "Mo": "2",
+            "Forgings": "Mo",
+            "SA": "Forgings",
+            "–.1": "SA",
+            "182": "–",
+            "F12": "336",
+            "K11564 2": "F12",
+            "…": "K11564",
+            "4": " …",
+            "1": "…",
+            "Unnamed: 15": 4.0,
+            "Unnamed: 16": 1.0
+          },
+          {
+            "10": 12,
+            "1Cr": "1Cr",
+            "–": "–",
+            "/": "V",
+            "2": "Smls. tube",
+            "Mo": "SA",
+            "Forgings": "–",
+            "SA": "213",
+            "–.1": "T17",
+            "182": "K12047",
+            "F12": " …",
+            "K11564 2": "…",
+            "…": "10B",
+            "4": "1",
+            "1": NaN,
+            "Unnamed: 15": NaN,
+            "Unnamed: 16": NaN
+          }
+        ]
+      },
+      {
+        "file": "Page_84_Table_6.csv",
+        "rows": 1,
+        "columns": 15,
+        "size": 15,
+        "data": [
+          {
+            "26": 27,
+            "1Cr": "1Cr",
+            "–": "–",
+            "/": 1,
+            "5": "/",
+            "Mo": "Mo",
+            "Forgings": "Forgings",
+            "SA": "SA",
+            "–.1": "–",
+            "372": 372,
+            "J": "J",
+            "K13548 70": "G41370 110",
+            "…": "…",
+            "….1": "…",
+            "….2": "…"
+          }
+        ]
+      },
+      {
+        "file": "Page_88_Table_1.csv",
+        "rows": 1,
+        "columns": 17,
+        "size": 17,
+        "data": [
+          {
+            "5": 6,
+            "1Cr": "1Cr",
+            "–": "–",
+            "/": 1,
+            "2": "/",
+            "Mo": "Mo",
+            "Wld. pipe": "Plate",
+            "SA": "SA/GB 713",
+            "–.1": "15CrMoR",
+            "691": "…",
+            "1CR": "NT",
+            "K11757": "2.5 <",
+            " …": " t",
+            "…": " ≤",
+            "4": 4,
+            "1": 4,
+            "Unnamed: 16": 1
+          }
+        ]
+      },
+      {
+        "file": "Page_84_Table_3.csv",
+        "rows": 1,
+        "columns": 20,
+        "size": 20,
+        "data": [
+          {
+            "14": 15,
+            "/": 3,
+            "2": "/",
+            "Cr": "Cr",
+            "–": "–",
+            "/.1": 1,
+            "2.1": "/",
+            "Mo": "Ni",
+            "Wld. pipe": "–",
+            "SA": "Cu",
+            "–.1": "Smls. & wld. tube",
+            "691": "SA",
+            "/.2": "–",
+            "2.2": 423,
+            "CR": 1,
+            "K12143": "K11535",
+            " …": " …",
+            "…": "…",
+            "3": 4,
+            "2.3": 2
+          }
+        ]
+      },
+      {
+        "file": "Page_84_Table_2.csv",
+        "rows": 1,
+        "columns": 20,
+        "size": 20,
+        "data": [
+          {
+            "10": 11,
+            "/": 1,
+            "2": "/",
+            "Cr": 2,
+            "–": "Cr",
+            "/.1": "–",
+            "2.1": 1,
+            "Mo": "/",
+            "Wld. tube": 2,
+            "SA": "Mo",
+            "–.1": "Cast pipe",
+            "250": "SA",
+            "T2S1": "–",
+            "K11547": 426,
+            " …": "CP2",
+            "…": "J11547",
+            "3": " …",
+            "1": "…",
+            "Unnamed: 18": 3,
+            "Unnamed: 19": 1
+          }
+        ]
+      },
+      {
+        "file": "Page_88_Table_4.csv",
+        "rows": 1,
+        "columns": 24,
+        "size": 24,
+        "data": [
+          {
+            "26": 27,
+            "1": 1,
+            "/": 1,
+            "4": "/",
+            "Cr": "Cr",
+            "–": "–",
+            "/.1": 1,
+            "2": "/",
+            "Mo": "Mo",
+            "–.1": "–",
+            "Si": "Si",
+            "Wld. pipe": "Forgings",
+            "SA": "SA",
+            "–.2": "–",
+            "691": 182,
+            "1.1": "F11",
+            "/.2": "K11572 2",
+            "4.1": "…",
+            "CR": 4,
+            "K11789": 1,
+            " …": NaN,
+            "…": NaN,
+            "4.2": NaN,
+            "1.2": NaN
+          }
+        ]
+      }
+    ],
+    "material_database": {
+      "carbon_steel": {
+        "specifications": [],
+        "product_forms": [
+          "Plate",
+          "Forging"
+        ],
+        "grades": [],
+        "sample_data": [
+          {
+            "file": "Page_64_Table_1.csv",
+            "rows": 44,
+            "data": [
+              {
+                "1": "2",
+                "Carbon steel": "Carbon steel",
+                "Forgings": "Plate",
+                "SA": "SA",
+                "–": "–",
+                "765": "515",
+                "I": "60",
+                "K03046": "K02401",
+                " …": " …",
+                "…": "…",
+                "1.1": "1",
+                "1.2": "1",
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN,
+                "Unnamed: 15": NaN,
+                "Unnamed: 16": NaN
+              },
+              {
+                "1": "3",
+                "Carbon steel": "Carbon steel",
+                "Forgings": "Plate",
+                "SA": "SA",
+                "–": "–",
+                "765": "516",
+                "I": "60",
+                "K03046": "K02100",
+                " …": " …",
+                "…": "…",
+                "1.1": "1",
+                "1.2": "1",
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN,
+                "Unnamed: 15": NaN,
+                "Unnamed: 16": NaN
+              },
+              {
+                "1": "4",
+                "Carbon steel": "Carbon steel",
+                "Forgings": "Wld. pipe",
+                "SA": "SA",
+                "–": "–",
+                "765": "671",
+                "I": "CB60",
+                "K03046": "K02401",
+                " …": " …",
+                "…": "…",
+                "1.1": "1",
+                "1.2": "1",
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN,
+                "Unnamed: 15": NaN,
+                "Unnamed: 16": NaN
+              },
+              {
+                "1": "5",
+                "Carbon steel": "Carbon steel",
+                "Forgings": "Wld. pipe",
+                "SA": "SA",
+                "–": "–",
+                "765": "671",
+                "I": "CC60",
+                "K03046": "K02100",
+                " …": " …",
+                "…": "…",
+                "1.1": "1",
+                "1.2": "1",
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN,
+                "Unnamed: 15": NaN,
+                "Unnamed: 16": NaN
+              },
+              {
+                "1": "6",
+                "Carbon steel": "Carbon steel",
+                "Forgings": "Wld. pipe",
+                "SA": "SA",
+                "–": "–",
+                "765": "671",
+                "I": "CE60",
+                "K03046": "K02402",
+                " …": " …",
+                "…": "…",
+                "1.1": "1",
+                "1.2": "1",
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN,
+                "Unnamed: 15": NaN,
+                "Unnamed: 16": NaN
+              }
+            ]
+          },
+          {
+            "file": "Page_76_Table_6.csv",
+            "rows": 15,
+            "data": [
+              {
+                "29": 30,
+                "Carbon steel": "Carbon steel",
+                "Plate": "Forgings",
+                "SA": "SA",
+                "–": "–",
+                "738": "372",
+                "B": "C",
+                "K12007": "K04801",
+                " …": " …",
+                "…": "…",
+                "1": "…",
+                "3": "…",
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN,
+                "Unnamed: 15": NaN,
+                "Unnamed: 16": NaN,
+                "Unnamed: 17": NaN,
+                "Unnamed: 18": NaN,
+                "Unnamed: 19": NaN,
+                "Unnamed: 20": NaN,
+                "Unnamed: 21": NaN,
+                "Unnamed: 22": NaN
+              },
+              {
+                "29": 31,
+                "Carbon steel": "Carbon steel",
+                "Plate": "Plate",
+                "SA": "SA",
+                "–": "–",
+                "738": "724",
+                "B": "A",
+                "K12007": "K11831",
+                " …": " …",
+                "…": "…",
+                "1": "1",
+                "3": "4",
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN,
+                "Unnamed: 15": NaN,
+                "Unnamed: 16": NaN,
+                "Unnamed: 17": NaN,
+                "Unnamed: 18": NaN,
+                "Unnamed: 19": NaN,
+                "Unnamed: 20": NaN,
+                "Unnamed: 21": NaN,
+                "Unnamed: 22": NaN
+              },
+              {
+                "29": 32,
+                "Carbon steel": "Carbon steel",
+                "Plate": "Plate",
+                "SA": "SA",
+                "–": "–",
+                "738": "724",
+                "B": "C",
+                "K12007": "K12037",
+                " …": " …",
+                "…": "…",
+                "1": "1",
+                "3": "4",
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN,
+                "Unnamed: 15": NaN,
+                "Unnamed: 16": NaN,
+                "Unnamed: 17": NaN,
+                "Unnamed: 18": NaN,
+                "Unnamed: 19": NaN,
+                "Unnamed: 20": NaN,
+                "Unnamed: 21": NaN,
+                "Unnamed: 22": NaN
+              },
+              {
+                "29": 33,
+                "Carbon steel": "Carbon steel",
+                "Plate": "Plate",
+                "SA": "SA",
+                "–": "–",
+                "738": "724",
+                "B": "B",
+                "K12007": "K12031",
+                " …": " …",
+                "…": "…",
+                "1": "1",
+                "3": "4",
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN,
+                "Unnamed: 15": NaN,
+                "Unnamed: 16": NaN,
+                "Unnamed: 17": NaN,
+                "Unnamed: 18": NaN,
+                "Unnamed: 19": NaN,
+                "Unnamed: 20": NaN,
+                "Unnamed: 21": NaN,
+                "Unnamed: 22": NaN
+              },
+              {
+                "29": 34,
+                "Carbon steel": "C",
+                "Plate": "–",
+                "SA": "Mn",
+                "–": "–",
+                "738": "Si",
+                "B": "–",
+                "K12007": "Cb",
+                " …": "Plate",
+                "…": "SA",
+                "1": "–",
+                "3": "737",
+                "Unnamed: 12": "B",
+                "Unnamed: 13": "K12001",
+                "Unnamed: 14": " …",
+                "Unnamed: 15": "…",
+                "Unnamed: 16": "1",
+                "Unnamed: 17": "2",
+                "Unnamed: 18": NaN,
+                "Unnamed: 19": NaN,
+                "Unnamed: 20": NaN,
+                "Unnamed: 21": NaN,
+                "Unnamed: 22": NaN
+              }
+            ]
+          },
+          {
+            "file": "Page_72_Table_1.csv",
+            "rows": 23,
+            "data": [
+              {
+                "1": 2,
+                "Carbon steel": "Carbon steel",
+                "Wld. pipe": "Wld. pipe",
+                "SA": "SA",
+                "–": "–",
+                "671": "671",
+                "CB70": "CC70",
+                "K03101": "K02700",
+                " …": " …",
+                "…": "…",
+                "1.1": "1",
+                "2": "2",
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN
+              },
+              {
+                "1": 3,
+                "Carbon steel": "Carbon steel",
+                "Wld. pipe": "Wld. pipe",
+                "SA": "SA",
+                "–": "–",
+                "671": "672",
+                "CB70": "B70",
+                "K03101": "K03101",
+                " …": " …",
+                "…": "…",
+                "1.1": "1",
+                "2": "2",
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN
+              },
+              {
+                "1": 4,
+                "Carbon steel": "Carbon steel",
+                "Wld. pipe": "Wld. pipe",
+                "SA": "SA",
+                "–": "–",
+                "671": "672",
+                "CB70": "C70",
+                "K03101": "K02700",
+                " …": " …",
+                "…": "…",
+                "1.1": "1",
+                "2": "2",
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN
+              },
+              {
+                "1": 5,
+                "Carbon steel": "Carbon steel",
+                "Wld. pipe": "Plate",
+                "SA": "SA/JIS G3118",
+                "–": "SGV480",
+                "671": "…",
+                "CB70": "…",
+                "K03101": "…",
+                " …": "1",
+                "…": "2",
+                "1.1": NaN,
+                "2": NaN,
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN
+              },
+              {
+                "1": 6,
+                "Carbon steel": "Carbon steel",
+                "Wld. pipe": "Smls. pipe",
+                "SA": "SA",
+                "–": "–",
+                "671": "106",
+                "CB70": "C",
+                "K03101": "K03501",
+                " …": " …",
+                "…": "…",
+                "1.1": "1",
+                "2": "2",
+                "Unnamed: 12": NaN,
+                "Unnamed: 13": NaN,
+                "Unnamed: 14": NaN
+              }
+            ]
+          },
+          {
+            "file": "Page_56_Table_2.csv",
+            "rows": 23,
+            "data": [
+              {
+                "6": 7,
+                "Carbon steel": "Carbon steel",
+                "Plate": "Wld. pipe",
+                "SA": "SA",
+                "–": "–",
+                "285": 672,
+                "A": "A45",
+                "K01700": "K01700",
+                " …": " …",
+                "…": "…",
+                "1": 1,
+                "1.1": 1
+              },
+              {
+                "6": 8,
+                "Carbon steel": "Carbon steel",
+                "Plate": "Sheet",
+                "SA": "SA",
+                "–": "–",
+                "285": 414,
+                "A": "A",
+                "K01700": "K01501",
+                " …": " …",
+                "…": "…",
+                "1": 1,
+                "1.1": 1
+              },
+              {
+                "6": 9,
+                "Carbon steel": "Carbon steel",
+                "Plate": "Wld. tube",
+                "SA": "SA",
+                "–": "–",
+                "285": 178,
+                "A": "A",
+                "K01700": "K01200",
+                " …": " …",
+                "…": "…",
+                "1": 1,
+                "1.1": 1
+              },
+              {
+                "6": 10,
+                "Carbon steel": "Carbon steel",
+                "Plate": "Wld. tube",
+                "SA": "SA",
+                "–": "–",
+                "285": 178,
+                "A": "A",
+                "K01700": "K01200",
+                " …": " …",
+                "…": "…",
+                "1": 1,
+                "1.1": 1
+              },
+              {
+                "6": 11,
+                "Carbon steel": "Carbon steel",
+                "Plate": "Smls. tube",
+                "SA": "SA",
+                "–": "–",
+                "285": 179,
+                "A": "…",
+                "K01700": "K01200",
+                " …": " …",
+                "…": "…",
+                "1": 1,
+                "1.1": 1
+              }
+            ]
+          }
+        ]
+      },
+      "stainless_steel": {
+        "specifications": [],
+        "grades": [],
+        "sample_data": []
+      },
+      "alloy_steel": {
+        "specifications": [],
+        "grades": [],
+        "sample_data": []
+      }
+    }
+  },
+  "comprehensive_material_guide": {
+    "temperature_based_selection": {
+      "cryogenic": {
+        "temperature_range": "-320°F to -50°F",
+        "materials": [
+          "SA-333 Grade 6 (Carbon Steel)",
+          "Type 304L SS",
+          "Type 316L SS",
+          "9% Nickel Steel"
+        ],
+        "applications": [
+          "LNG 저장탱크",
+          "극저온용기",
+          "액체질소 설비"
+        ]
+      },
+      "low_temperature": {
+        "temperature_range": "-50°F to 100°F",
+        "materials": [
+          "SA-516 Grade 70 (Carbon Steel)",
+          "SA-283 Grade C (Carbon Steel)",
+          "Type 304 SS",
+          "Type 316 SS"
+        ],
+        "applications": [
+          "저온용기",
+          "냉장설비",
+          "일반 압력용기"
+        ]
+      },
+      "medium_temperature": {
+        "temperature_range": "100°F to 600°F",
+        "materials": [
+          "SA-516 Grade 70 (Carbon Steel)",
+          "SA-285 Grade C (Carbon Steel)",
+          "Type 304 SS",
+          "Type 316 SS"
+        ],
+        "applications": [
+          "일반 압력용기",
+          "열교환기",
+          "보일러"
+        ]
+      },
+      "high_temperature": {
+        "temperature_range": "600°F to 800°F",
+        "materials": [
+          "SA-516 Grade 70 (Carbon Steel)",
+          "Type 304 SS",
+          "Type 316 SS",
+          "Type 321 SS"
+        ],
+        "applications": [
+          "고온용기",
+          "열교환기",
+          "증기관"
+        ]
+      },
+      "very_high_temperature": {
+        "temperature_range": "800°F to 1200°F",
+        "materials": [
+          "SA-213 T91 (Alloy Steel)",
+          "SA-213 T92 (Alloy Steel)",
+          "Type 304 SS",
+          "Type 316 SS",
+          "Type 321 SS"
+        ],
+        "applications": [
+          "고온 보일러",
+          "터빈",
+          "고온 파이프"
+        ]
+      }
+    },
+    "application_based_selection": {
+      "pressure_vessels": {
+        "materials": [
+          "SA-516 Grade 70",
+          "SA-283 Grade C",
+          "Type 304 SS"
+        ],
+        "considerations": [
+          "압력",
+          "온도",
+          "내식성",
+          "용접성"
+        ]
+      },
+      "piping_systems": {
+        "materials": [
+          "SA-53",
+          "SA-106",
+          "SA-312",
+          "Type 304 SS"
+        ],
+        "considerations": [
+          "압력",
+          "온도",
+          "유체 특성",
+          "부식성"
+        ]
+      },
+      "heat_exchangers": {
+        "materials": [
+          "SA-516 Grade 70",
+          "Type 304 SS",
+          "Type 316 SS"
+        ],
+        "considerations": [
+          "열전도율",
+          "내식성",
+          "온도",
+          "압력"
+        ]
+      },
+      "boilers": {
+        "materials": [
+          "SA-213 T91",
+          "SA-213 T92",
+          "SA-516 Grade 70"
+        ],
+        "considerations": [
+          "고온 강도",
+          "크리프 저항성",
+          "내산화성"
+        ]
+      }
+    }
+  },
+  "search_and_usage_guide": {
+    "search_keywords": {
+      "materials": [
+        "Carbon Steel",
+        "Stainless Steel",
+        "Alloy Steel",
+        "SA-516",
+        "SA-283",
+        "SA-285",
+        "SA-213",
+        "SA-312",
+        "Type 304",
+        "Type 316",
+        "Type 321",
+        "T91",
+        "T92"
+      ],
+      "properties": [
+        "Allowable Stress",
+        "Design Stress",
+        "Tensile Strength",
+        "Yield Strength",
+        "Modulus of Elasticity",
+        "Thermal Expansion",
+        "Creep Strength",
+        "Fatigue Strength"
+      ],
+      "temperatures": [
+        "100F",
+        "200F",
+        "300F",
+        "400F",
+        "500F",
+        "600F",
+        "700F",
+        "800F",
+        "900F",
+        "1000F",
+        "1100F",
+        "1200F"
+      ],
+      "product_forms": [
+        "Plate",
+        "Pipe",
+        "Tube",
+        "Bar",
+        "Sheet",
+        "Forging",
+        "Fitting",
+        "Welded",
+        "Seamless"
+      ]
+    },
+    "file_patterns": {
+      "tables": "Page_*_Table_*.csv",
+      "charts": "Page_*_Chart_*.json",
+      "large_tables": "Page_*_Table_*.csv (10행 이상 또는 15열 이상)"
+    },
+    "usage_scenarios": {
+      "material_selection": "온도, 압력, 환경 조건에 따른 재료 선택",
+      "stress_calculation": "온도별 허용응력 값 조회",
+      "design_verification": "기존 설계의 재료 적합성 검토",
+      "cost_analysis": "재료별 경제성 비교 분석"
+    }
+  }
+}

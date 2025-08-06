@@ -1,0 +1,117 @@
+# ASME BPVC 데이터 검증 리포트
+
+## 📊 검증 요약
+- **총 검증 파일 수**: 340개
+- **유효한 파일 수**: 340개
+- **오류 파일 수**: 0개
+- **성공률**: 100.0%
+
+## 📁 LLM 데이터 파일 통계
+- **llm_comprehensive_data.json**: 11.9KB
+- **llm_raw_data.json**: 308.6KB
+- **llm_massive_data.json**: 29.0KB
+- **llm_actual_data.json**: 11.3KB
+- **llm_ready_data.json**: 7.7KB
+
+## ⚠️ 경고 목록
+- Page_10_Table_1.csv: 데이터 타입 문제
+- Page_52_Table_1.csv: 데이터 타입 문제
+- Page_52_Table_1.csv: 1개 결측값
+- Page_88_Table_2.csv: 3개 결측값
+- Page_60_Table_2.csv: 6개 결측값
+- Page_45_Table_8.csv: 6개 결측값
+- Page_10_Table_2.csv: 21개 결측값
+- Page_47_Table_5.csv: 1개 결측값
+- Page_88_Table_4.csv: 4개 결측값
+- Page_2_Table_1_raw.csv: 데이터 타입 문제
+- Page_10_Table_4.csv: 8개 결측값
+- Page_10_Table_5.csv: 1개 결측값
+- Page_60_Table_5.csv: 1개 결측값
+- Page_44_Table_10.csv: 데이터 타입 문제
+- Page_43_Table_10.csv: 데이터 타입 문제
+- Page_44_Table_6.csv: 데이터 타입 문제
+- Page_44_Table_6.csv: 23개 결측값
+- Page_43_Table_11.csv: 1개 결측값
+- Page_44_Table_11.csv: 데이터 타입 문제
+- Page_44_Table_11.csv: 6개 결측값
+- Page_76_Table_6.csv: 89개 결측값
+- Page_43_Table_9.csv: 14개 결측값
+- Page_14_Table_20.csv: 데이터 타입 문제
+- Page_7_Table_1.csv: 데이터 타입 문제
+- Page_92_Table_1.csv: 4개 결측값
+- Page_76_Table_1.csv: 15개 결측값
+- Page_45_Table_11.csv: 데이터 타입 문제
+- Page_45_Table_11.csv: 32개 결측값
+- Page_51_Table_2.csv: 15개 결측값
+- Page_92_Table_5.csv: 68개 결측값
+- Page_92_Table_4.csv: 1개 결측값
+- Page_51_Table_3.csv: 21개 결측값
+- Page_44_Table_1.csv: 1개 결측값
+- Page_46_Table_8.csv: 3개 결측값
+- Page_45_Table_12.csv: 3개 결측값
+- Page_44_Table_3.csv: 11개 결측값
+- Page_51_Table_1.csv: 데이터 타입 문제
+- Page_44_Table_2.csv: 28개 결측값
+- Page_76_Table_3.csv: 17개 결측값
+- Page_47_Table_11.csv: 데이터 타입 문제
+- Page_47_Table_11.csv: 14개 결측값
+- Page_56_Table_1.csv: 4개 결측값
+- Page_47_Table_10.csv: 데이터 타입 문제
+- Page_47_Table_10.csv: 7개 결측값
+- Page_100_Table_3.csv: 11개 결측값
+- Page_46_Table_7.csv: 3개 결측값
+- Page_64_Table_1.csv: 209개 결측값
+- Page_14_Table_1.csv: 2개 결측값
+- Page_14_Table_3.csv: 4개 결측값
+- Page_100_Table_1.csv: 2개 결측값
+- Page_68_Table_5.csv: 3개 결측값
+- Page_11_Table_7.csv: 2개 결측값
+- Page_46_Table_14.csv: 데이터 타입 문제
+- Page_46_Table_14.csv: 8개 결측값
+- Page_56_Table_3.csv: 6개 결측값
+- Page_68_Table_4.csv: 10개 결측값
+- Page_46_Table_4.csv: 데이터 타입 문제
+- Page_53_Table_2.csv: 데이터 타입 문제
+- Page_80_Table_2.csv: 14개 결측값
+- Page_44_Table_9.csv: 데이터 타입 문제
+- Page_44_Table_9.csv: 15개 결측값
+- Page_46_Table_10.csv: 3개 결측값
+- Page_11_Table_3.csv: 30개 결측값
+- Page_11_Table_2.csv: 7개 결측값
+- Page_56_Table_6.csv: 4개 결측값
+- Page_44_Table_8.csv: 3개 결측값
+- Page_43_Table_4.csv: 1개 결측값
+- Page_100_Table_5.csv: 12개 결측값
+- Page_46_Table_1.csv: 3개 결측값
+- Page_53_Table_1.csv: 2개 결측값
+- Page_46_Table_3.csv: 데이터 타입 문제
+- Page_46_Table_3.csv: 16개 결측값
+- Page_80_Table_1.csv: 2개 결측값
+- Page_68_Table_3.csv: 3개 결측값
+- Page_46_Table_13.csv: 2개 결측값
+- Page_46_Table_12.csv: 3개 결측값
+- Page_68_Table_2.csv: 82개 결측값
+- Page_14_Table_4.csv: 데이터 타입 문제
+- Page_14_Table_4.csv: 4개 결측값
+- Page_45_Table_2.csv: 3개 결측값
+- Page_12_Table_1.csv: 데이터 타입 문제
+- Page_72_Table_7.csv: 1개 결측값
+- Page_45_Table_3.csv: 3개 결측값
+- Page_45_Table_1.csv: 1개 결측값
+- Page_12_Table_2.csv: 데이터 타입 문제
+- Page_47_Table_8.csv: 4개 결측값
+- Page_12_Table_3.csv: 1개 결측값
+- Page_72_Table_4.csv: 9개 결측값
+- Page_45_Table_4.csv: 1개 결측값
+- Page_96_Table_4.csv: 4개 결측값
+- Page_96_Table_5.csv: 60개 결측값
+- Page_12_Table_6.csv: 2개 결측값
+- Page_72_Table_1.csv: 63개 결측값
+- Page_45_Table_7.csv: 데이터 타입 문제
+- Page_45_Table_7.csv: 4개 결측값
+- Page_72_Table_3.csv: 2개 결측값
+- Page_49_Table_1.csv: 데이터 타입 문제
+- Page_12_Table_5.csv: 1개 결측값
+
+## 💡 권장사항
+- ⚠️ 경고사항들을 검토하고 개선하세요

@@ -1,150 +1,170 @@
-# ASME BPVC Section II Part D 데이터베이스 구축 프로젝트
+# ASME BPVC 2023 Section II Part D 데이터베이스 프로젝트
 
 ## 📋 프로젝트 개요
 
-이 프로젝트는 ASME BPVC 2023 Section II Part D (Customary) PDF 문서에서 표와 그래프 데이터를 자동으로 추출하여 구조화된 데이터베이스를 구축하는 시스템입니다.
+이 프로젝트는 ASME BPVC 2023 Section II Part D (Customary) 문서에서 재료 데이터를 추출하고, LLM 모델 학습용 데이터셋을 생성하며, MCP 서버를 통해 데이터에 접근할 수 있는 종합적인 시스템입니다.
 
-## 🎯 주요 성과
+## 🎯 주요 기능
 
-### 📊 추출 결과 (100페이지 기준)
-- **총 표 수**: 158개
-- **총 그래프 수**: 179개
-- **표 유형별 분류**:
-  - 허용응력 표: 4개
-  - 설계응력 표: 7개
-  - 기계적 특성 표: 2개
-  - 기타 표: 145개
-- **그래프 유형별 분류**:
-  - 이소크로너스 응력-변형률 곡선: 64개
-  - 외압 설계 차트: 0개
-  - 기타 곡선: 115개
+### 1. 데이터 추출 및 처리
+- PDF 문서에서 표와 그래프 자동 추출
+- CSV 및 JSON 형태로 데이터 변환
+- 데이터 품질 검증 및 정제
 
-## 🏗️ 프로젝트 구조
+### 2. LLM용 데이터 생성
+- 종합 데이터베이스 생성 (`llm_comprehensive_data.json`)
+- 원본 데이터 보존 (`llm_raw_data.json`)
+- 대량 데이터 분석 (`llm_massive_data.json`)
+- 학습용 데이터셋 생성 (훈련/검증/테스트 분할)
 
-```
-asme_database_project/
-├── scripts/
-│   ├── schema_definitions.py      # 스키마 정의
-│   ├── data_extractor.py          # 기본 데이터 추출기
-│   ├── improved_table_detector.py # 개선된 표 감지기
-│   ├── simple_extractor.py        # 간단한 추출기
-│   ├── advanced_table_extractor.py # 고급 표 추출기
-│   ├── table_finder.py            # 표 찾기 도구
-│   └── final_extractor.py         # 최종 완성된 추출기
-├── output/                        # 추출된 데이터
-│   ├── *.csv                      # 표 데이터 파일들
-│   ├── *.json                     # 그래프 정보 파일들
-│   ├── final_extraction_report.json # 최종 보고서
-│   └── *.log                      # 로그 파일들
-├── requirements.txt               # 필요한 라이브러리
-└── README.md                      # 프로젝트 문서
-```
+### 3. MCP 서버
+- ASME 재료 데이터 검색 API
+- 허용응력값 및 설계응력강도값 조회
+- 기계적 특성 및 사용 가이드라인 제공
+- 설계 예시 및 권장사항 제공
+
+## 📊 데이터 통계
+
+- **총 표 파일**: 161개 (CSV)
+- **총 그래프 파일**: 179개 (JSON)
+- **가장 큰 표**: Page_64_Table_1.csv (44행 x 17열 = 748개 셀)
+- **큰 표들**: 79개 (5행 이상 또는 10열 이상)
+- **LLM 학습용 Q&A 쌍**: 75개
 
 ## 🚀 설치 및 실행
 
-### 1. 필요한 라이브러리 설치
+### 1. 의존성 설치
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Tesseract OCR 설치 (macOS)
+### 2. 데이터 검증
 ```bash
-brew install tesseract
+python data_validation.py
 ```
 
-### 3. 데이터 추출 실행
+### 3. LLM 데이터셋 생성
 ```bash
-python scripts/final_extractor.py
+python llm_dataset_generator.py
 ```
 
-## 📚 스키마 정의
-
-### 표 스키마
-- **허용응력 표**: `Allowable_Stress_at_[온도]F` 형식의 컬럼
-- **설계응력 표**: `Design_Stress_Intensity_at_[온도]F` 형식의 컬럼
-- **기계적 특성 표**: `Min_Tensile_Strength_ksi`, `Min_Yield_Strength_ksi` 등
-- **물리적 특성 표**: `E_at_[온도]F`, `Coeff_[재료]_[계수]` 등
-
-### 그래프 스키마
-- **외압 설계 차트**: `x`, `y` 좌표 데이터
-- **이소크로너스 곡선**: `strain_percent`, `stress_ksi` 데이터
-- **기타 곡선**: `x`, `y`, `curve_label` 데이터
-
-## 🔧 주요 기능
-
-### 1. 스마트 표 감지
-- OCR과 좌표 기반 텍스트 추출
-- ASME 키워드 기반 표 식별
-- 온도/응력 패턴 매칭
-
-### 2. 자동 데이터 정제
-- 컬럼명 정규화
-- 데이터 타입 변환
-- 빈 값 및 중복 제거
-
-### 3. 메타데이터 생성
-- 표/그래프 유형 자동 분류
-- 온도/응력 데이터 포함 여부 확인
-- 상세한 추출 보고서 생성
-
-## 📈 사용된 기술
-
-- **PDF 처리**: PyMuPDF (fitz)
-- **OCR**: Tesseract
-- **이미지 처리**: OpenCV
-- **데이터 처리**: Pandas, NumPy
-- **정규표현식**: Python re 모듈
-
-## 📊 추출된 데이터 예시
-
-### 표 데이터 (CSV)
-```csv
-Line_No,Nominal_Composition,Product_Form,Spec_No,Type_Grade,Allowable_Stress_at_100F,Allowable_Stress_at_200F
-1,Carbon Steel,Plate,SA-516,70,20.0,19.5
-2,Alloy Steel,Tube,SA-213,T11,18.5,17.8
+### 4. MCP 서버 실행
+```bash
+python mcp_server.py
 ```
 
-### 그래프 정보 (JSON)
-```json
+## 📁 파일 구조
+
+```
+asme_database_project/
+├── data_validation.py              # 데이터 검증 스크립트
+├── llm_dataset_generator.py        # LLM 데이터셋 생성기
+├── mcp_server.py                   # MCP 서버
+├── llm_comprehensive_data.json     # 종합 데이터베이스
+├── llm_raw_data.json              # 원본 데이터
+├── llm_massive_data.json          # 대량 데이터 분석
+├── llm_dataset_training.json      # 훈련용 데이터셋
+├── llm_dataset_validation.json    # 검증용 데이터셋
+├── llm_dataset_testing.json       # 테스트용 데이터셋
+├── validation_report.json         # 검증 리포트
+├── validation_report.md           # 검증 리포트 (마크다운)
+├── llm_dataset_summary.md         # 데이터셋 요약
+├── output/                        # 추출된 원본 파일들
+│   ├── Page_*_Table_*.csv        # 표 데이터
+│   └── Page_*_Chart_*.json       # 그래프 데이터
+└── scripts/                       # 데이터 추출 스크립트들
+```
+
+## 🔧 MCP 서버 API
+
+### 사용 가능한 도구들
+
+1. **search_material** - ASME BPVC 재료 검색
+2. **get_allowable_stress** - 재료의 허용응력값 조회
+3. **get_design_stress** - 재료의 설계응력강도값 조회
+4. **get_mechanical_properties** - 재료의 기계적 특성 조회
+5. **get_design_example** - 설계 예시 조회
+6. **get_usage_guidelines** - 재료 사용 가이드라인 조회
+7. **search_materials_by_property** - 특성별 재료 검색
+
+### 예시 사용법
+
+```python
+# 재료 검색
 {
-  "title": "E-100.18-1",
-  "type": "isochronous_stress_strain",
-  "description": "Average Isochronous Stress-Strain Curves for Type 304 SS at 800°F",
-  "page": 10
+    "material_name": "SA-516",
+    "material_type": "carbon_steel"
+}
+
+# 허용응력값 조회
+{
+    "material_name": "SA-516_Grade_70",
+    "temperature": "400F"
+}
+
+# 설계 예시 조회
+{
+    "design_type": "high_temperature_vessel"
 }
 ```
 
-## 🔍 데이터 품질 보증
+## 📈 데이터 품질
 
-1. **다중 검증**: 여러 알고리즘을 통한 중복 검증
-2. **패턴 매칭**: ASME 표준 패턴 기반 정확성 검증
-3. **메타데이터 검증**: 추출된 데이터의 구조적 무결성 확인
-4. **로깅 시스템**: 전체 추출 과정의 상세한 기록
+- **검증 성공률**: 100%
+- **총 검증 파일 수**: 340개
+- **오류 수**: 0개
+- **경고 수**: 98개 (주로 결측값 관련)
 
-## 📝 향후 개선 계획
+## 🎯 활용 방안
 
-1. **그래프 데이터 디지털라이징**: 실제 곡선 좌표 데이터 추출
-2. **머신러닝 기반 분류**: 더 정확한 표/그래프 유형 분류
-3. **웹 인터페이스**: 사용자 친화적인 데이터 탐색 도구
-4. **데이터베이스 연동**: SQL/NoSQL 데이터베이스 저장
+### 1. 엔지니어링 설계
+- 압력용기 설계 시 재료 선택
+- 허용응력값 및 설계응력강도값 조회
+- 온도별 재료 특성 분석
 
-## 🤝 기여 방법
+### 2. LLM 모델 학습
+- ASME 코드 기반 질의응답 모델 훈련
+- 엔지니어링 지식 베이스 구축
+- 설계 자동화 시스템 개발
 
-1. 이슈 리포트 생성
-2. 개선 사항 제안
-3. 코드 풀 리퀘스트
-4. 문서 개선
+### 3. 교육 및 연구
+- ASME BPVC 교육 자료 개발
+- 재료 공학 연구 데이터 제공
+- 설계 가이드라인 연구
+
+## 🔍 검색 가이드라인
+
+### 키워드
+- **재료**: Carbon Steel, Alloy Steel, Stainless Steel, SA-516, SA-283, SA-213, Type 304, Type 316
+- **특성**: Allowable Stress, Design Stress, Tensile Strength, Yield Strength, Modulus of Elasticity
+- **온도**: 100F, 200F, 300F, 400F, 500F, 600F, 700F, 800F
+- **형태**: Plate, Pipe, Tube, Bar, Sheet, Weld
+
+### 검색 방법
+1. **재료명 검색**: 재료명으로 검색하여 모든 특성 데이터 제공
+2. **온도 검색**: 온도로 검색하여 해당 온도에서의 응력 값 제공
+3. **특성 검색**: 특성명으로 검색하여 모든 재료별 데이터 제공
+4. **형태 검색**: 제품 형태로 검색하여 해당 형태의 재료 정보 제공
+
+## 📝 설계 팁
+
+- **온도 보간**: 표에 없는 온도는 선형 보간 사용
+- **안전계수**: 설계 시 적절한 안전계수 적용
+- **코드 준수**: ASME BPVC Section VIII Division 1 준수
+- **검증**: 최종 설계는 공인된 엔지니어 검토 필요
+
+## 🤝 기여하기
+
+1. 이슈 등록
+2. 포크 생성
+3. 기능 브랜치 생성
+4. 변경사항 커밋
+5. 풀 리퀘스트 생성
 
 ## 📄 라이선스
 
-이 프로젝트는 교육 및 연구 목적으로 개발되었습니다.
+이 프로젝트는 MIT 라이선스 하에 배포됩니다.
 
 ## 📞 문의
 
-프로젝트 관련 문의사항이 있으시면 이슈를 통해 연락해 주세요.
-
----
-
-**프로젝트 완성일**: 2025년 8월 6일  
-**처리된 페이지**: 100페이지  
-**총 추출 데이터**: 337개 (표 158개 + 그래프 179개) 
+프로젝트 관련 문의사항은 이슈를 통해 연락해 주세요. 

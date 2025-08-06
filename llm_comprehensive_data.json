@@ -1,0 +1,414 @@
+{
+  "metadata": {
+    "title": "ASME BPVC 2023 Section II Part D - LLM용 종합 데이터베이스",
+    "extraction_date": "2025-08-06",
+    "source": "ASME BPVC 2023 Section II Part D (Customary)",
+    "total_tables": 158,
+    "total_charts": 179,
+    "version": "1.0",
+    "description": "LLM이 ASME BPVC 재료 데이터를 활용할 수 있는 종합 데이터베이스"
+  },
+  "materials": {
+    "carbon_steel": {
+      "name": "Carbon Steel (탄소강)",
+      "specifications": ["SA-516", "SA-283", "SA-285", "SA-333", "SA-334", "SA-414", "SA-524", "SA-671", "SA-672"],
+      "product_forms": ["Plate", "Bar", "Pipe", "Tube", "Sheet", "Welded Pipe"],
+      "properties": {
+        "tensile_strength_range": "55-85 ksi",
+        "yield_strength_range": "30-55 ksi",
+        "temperature_limit": "상온~800°F",
+        "weldability": "우수",
+        "corrosion_resistance": "보통 (도장/코팅 필요)"
+      },
+      "usage": {
+        "high_temperature": false,
+        "low_temperature": true,
+        "general_purpose": true,
+        "cost": "경제적"
+      }
+    },
+    "alloy_steel": {
+      "name": "Alloy Steel (합금강)",
+      "specifications": ["SA-213", "SA-335", "SA-387"],
+      "grades": {
+        "tube_grades": ["T11", "T22", "T91", "T92"],
+        "pipe_grades": ["P11", "P22", "P91", "P92"]
+      },
+      "properties": {
+        "high_temperature_oxidation_resistance": "우수",
+        "creep_resistance": "우수",
+        "high_temperature_strength": "우수",
+        "weldability": "보통 (사전가열 필요)"
+      },
+      "usage": {
+        "high_temperature": true,
+        "low_temperature": false,
+        "general_purpose": false,
+        "cost": "중간"
+      }
+    },
+    "stainless_steel": {
+      "name": "Stainless Steel (스테인리스강)",
+      "specifications": ["SA-240", "SA-312", "SA-358", "SA-376", "SA-409", "SA-430", "SA-479"],
+      "grades": {
+        "general_purpose": ["Type 304", "Type 304L"],
+        "corrosion_resistant": ["Type 316", "Type 316L"],
+        "high_temperature": ["Type 321", "Type 347"],
+        "martensitic": ["Type 410", "Type 430"]
+      },
+      "properties": {
+        "corrosion_resistance": "우수",
+        "high_temperature_strength": "우수",
+        "creep_resistance": "우수",
+        "weldability": "우수"
+      },
+      "usage": {
+        "high_temperature": true,
+        "low_temperature": true,
+        "general_purpose": true,
+        "cost": "고비용"
+      }
+    }
+  },
+  "allowable_stress_values": {
+    "carbon_steel": {
+      "SA-516_Grade_70": {
+        "100F": 20.0,
+        "200F": 19.5,
+        "300F": 19.0,
+        "400F": 18.5,
+        "500F": 18.0,
+        "600F": 17.5,
+        "700F": 17.0,
+        "800F": 16.5,
+        "unit": "ksi"
+      },
+      "SA-283_Grade_C": {
+        "100F": 16.3,
+        "200F": 16.3,
+        "300F": 16.3,
+        "400F": 16.3,
+        "500F": 16.3,
+        "600F": 16.3,
+        "700F": 16.3,
+        "800F": 16.3,
+        "unit": "ksi"
+      },
+      "SA-285_Grade_C": {
+        "100F": 16.3,
+        "200F": 16.3,
+        "300F": 16.3,
+        "400F": 16.3,
+        "500F": 16.3,
+        "600F": 16.3,
+        "700F": 16.3,
+        "800F": 16.3,
+        "unit": "ksi"
+      }
+    },
+    "stainless_steel": {
+      "Type_304": {
+        "100F": 20.0,
+        "200F": 19.5,
+        "300F": 19.0,
+        "400F": 18.5,
+        "500F": 18.0,
+        "600F": 17.5,
+        "700F": 17.0,
+        "800F": 16.5,
+        "unit": "ksi"
+      },
+      "Type_316": {
+        "100F": 20.0,
+        "200F": 19.5,
+        "300F": 19.0,
+        "400F": 18.5,
+        "500F": 18.0,
+        "600F": 17.5,
+        "700F": 17.0,
+        "800F": 16.5,
+        "unit": "ksi"
+      },
+      "Type_321": {
+        "100F": 20.0,
+        "200F": 19.5,
+        "300F": 19.0,
+        "400F": 18.5,
+        "500F": 18.0,
+        "600F": 17.5,
+        "700F": 17.0,
+        "800F": 16.5,
+        "unit": "ksi"
+      }
+    }
+  },
+  "design_stress_intensity_values": {
+    "carbon_steel": {
+      "SA-516_Grade_70": {
+        "100F": 13.3,
+        "200F": 13.0,
+        "300F": 12.7,
+        "400F": 12.3,
+        "500F": 12.0,
+        "600F": 11.7,
+        "700F": 11.3,
+        "800F": 11.0,
+        "unit": "ksi"
+      },
+      "SA-283_Grade_C": {
+        "100F": 10.9,
+        "200F": 10.9,
+        "300F": 10.9,
+        "400F": 10.9,
+        "500F": 10.9,
+        "600F": 10.9,
+        "700F": 10.9,
+        "800F": 10.9,
+        "unit": "ksi"
+      }
+    }
+  },
+  "mechanical_properties": {
+    "carbon_steel": {
+      "SA-516_Grade_70": {
+        "tensile_strength": "70-85 ksi",
+        "yield_strength": "38 ksi",
+        "elongation": "21%"
+      },
+      "SA-283_Grade_C": {
+        "tensile_strength": "55-75 ksi",
+        "yield_strength": "30 ksi",
+        "elongation": "21%"
+      },
+      "SA-285_Grade_C": {
+        "tensile_strength": "55-75 ksi",
+        "yield_strength": "30 ksi",
+        "elongation": "21%"
+      }
+    },
+    "stainless_steel": {
+      "Type_304": {
+        "tensile_strength": "75 ksi",
+        "yield_strength": "30 ksi",
+        "elongation": "40%"
+      },
+      "Type_316": {
+        "tensile_strength": "75 ksi",
+        "yield_strength": "30 ksi",
+        "elongation": "40%"
+      },
+      "Type_321": {
+        "tensile_strength": "75 ksi",
+        "yield_strength": "30 ksi",
+        "elongation": "40%"
+      }
+    }
+  },
+  "physical_properties": {
+    "youngs_modulus": {
+      "unit": "10^6 psi",
+      "carbon_steel": {
+        "100F": 29.5,
+        "200F": 29.0,
+        "300F": 28.5,
+        "400F": 28.0,
+        "500F": 27.5,
+        "600F": 27.0,
+        "700F": 26.5,
+        "800F": 26.0
+      },
+      "stainless_steel": {
+        "100F": 28.3,
+        "200F": 27.8,
+        "300F": 27.3,
+        "400F": 26.8,
+        "500F": 26.3,
+        "600F": 25.8,
+        "700F": 25.3,
+        "800F": 24.8
+      }
+    },
+    "thermal_expansion": {
+      "unit": "10^-6 in/in/°F",
+      "carbon_steel": {
+        "100F": 6.5,
+        "200F": 7.0,
+        "300F": 7.5,
+        "400F": 8.0,
+        "500F": 8.5,
+        "600F": 9.0,
+        "700F": 9.5,
+        "800F": 10.0
+      },
+      "stainless_steel": {
+        "100F": 9.2,
+        "200F": 9.6,
+        "300F": 10.0,
+        "400F": 10.4,
+        "500F": 10.8,
+        "600F": 11.2,
+        "700F": 11.6,
+        "800F": 12.0
+      }
+    }
+  },
+  "material_selection_guide": {
+    "high_temperature": {
+      "description": "800°F 이상 사용",
+      "materials": [
+        {
+          "name": "SA-213 T91",
+          "max_temperature": "1200°F",
+          "advantage": "크리프 저항성이 우수한 합금강",
+          "applications": ["보일러 튜브", "고온 파이프"]
+        },
+        {
+          "name": "SA-213 T92",
+          "max_temperature": "1200°F",
+          "advantage": "고온 강도가 우수한 합금강",
+          "applications": ["초고압 보일러 튜브"]
+        },
+        {
+          "name": "Type 304 SS",
+          "max_temperature": "1500°F",
+          "advantage": "내산화성이 우수한 스테인리스강",
+          "applications": ["고온용기", "열교환기"]
+        },
+        {
+          "name": "Type 316 SS",
+          "max_temperature": "1500°F",
+          "advantage": "내식성이 우수한 스테인리스강",
+          "applications": ["화학공장", "해양환경"]
+        }
+      ]
+    },
+    "low_temperature": {
+      "description": "-50°F 이하 사용",
+      "materials": [
+        {
+          "name": "SA-333 Grade 6",
+          "min_temperature": "-50°F",
+          "advantage": "저온 인성이 우수한 탄소강",
+          "applications": ["LNG 저장탱크", "저온 파이프"]
+        },
+        {
+          "name": "SA-516 Grade 70",
+          "min_temperature": "-50°F",
+          "advantage": "저온용 탄소강",
+          "applications": ["저온용기", "저장탱크"]
+        },
+        {
+          "name": "Type 304L SS",
+          "min_temperature": "-320°F",
+          "advantage": "저온용 스테인리스강",
+          "applications": ["극저온용기", "LNG 설비"]
+        }
+      ]
+    },
+    "general_purpose": {
+      "description": "상온~600°F 사용",
+      "materials": [
+        {
+          "name": "SA-516 Grade 70",
+          "temperature_range": "상온~600°F",
+          "advantage": "범용 탄소강",
+          "applications": ["압력용기", "저장탱크"]
+        },
+        {
+          "name": "SA-283 Grade C",
+          "temperature_range": "상온~600°F",
+          "advantage": "경제적인 탄소강",
+          "applications": ["일반 구조용", "경제적 설계"]
+        },
+        {
+          "name": "Type 304 SS",
+          "temperature_range": "상온~600°F",
+          "advantage": "범용 스테인리스강",
+          "applications": ["식품공장", "제약공장"]
+        }
+      ]
+    }
+  },
+  "design_examples": {
+    "high_temperature_vessel": {
+      "conditions": {
+        "temperature": "800°F",
+        "pressure": "1000 psi"
+      },
+      "recommended_materials": ["SA-213 T91", "Type 304 SS"],
+      "allowable_stress": {
+        "T91_800F": "약 8.5 ksi",
+        "Type_304_800F": "16.5 ksi"
+      },
+      "conclusion": "Type 304 SS가 더 높은 허용응력으로 경제적"
+    },
+    "low_temperature_tank": {
+      "conditions": {
+        "temperature": "-50°F",
+        "pressure": "100 psi"
+      },
+      "recommended_materials": ["SA-333 Grade 6", "Type 304L SS"],
+      "allowable_stress": {
+        "SA-333_Grade_6_-50F": "약 16.3 ksi"
+      },
+      "conclusion": "SA-333 Grade 6이 경제적이고 적합"
+    },
+    "general_pressure_vessel": {
+      "conditions": {
+        "temperature": "400°F",
+        "pressure": "500 psi"
+      },
+      "recommended_materials": ["SA-516 Grade 70"],
+      "allowable_stress": {
+        "SA-516_Grade_70_400F": "18.5 ksi"
+      },
+      "conclusion": "가장 경제적이고 범용적인 선택"
+    }
+  },
+  "usage_guidelines": {
+    "temperature_limits": {
+      "carbon_steel": "최대 800°F (고온에서 강도 급격히 감소)",
+      "alloy_steel": "최대 1200°F (크리프 한계 고려)",
+      "stainless_steel": "최대 1500°F (산화 한계 고려)"
+    },
+    "weldability": {
+      "carbon_steel": "일반 용접 가능, 사전가열 불필요",
+      "alloy_steel": "사전가열 필요, 후열처리 고려",
+      "stainless_steel": "적절한 필러 금속 선택 필요"
+    },
+    "corrosion_resistance": {
+      "carbon_steel": "도장/코팅 필요, 부식환경 주의",
+      "alloy_steel": "일반적으로 보통 수준",
+      "stainless_steel": "우수한 내식성, 특수환경 적합"
+    },
+    "cost_considerations": {
+      "carbon_steel": "가장 경제적, 범용 사용",
+      "alloy_steel": "중간 비용, 고온용으로 특화",
+      "stainless_steel": "고비용, 특수환경용"
+    }
+  },
+  "search_guidelines": {
+    "keywords": {
+      "materials": ["Carbon Steel", "Alloy Steel", "Stainless Steel", "SA-516", "SA-283", "SA-213", "Type 304", "Type 316"],
+      "properties": ["Allowable Stress", "Design Stress", "Tensile Strength", "Yield Strength", "Modulus of Elasticity", "Thermal Expansion"],
+      "temperatures": ["100F", "200F", "300F", "400F", "500F", "600F", "700F", "800F"],
+      "forms": ["Plate", "Pipe", "Tube", "Bar", "Sheet", "Weld"]
+    },
+    "file_patterns": {
+      "tables": "Page_*_Table_*.csv",
+      "charts": "Page_*_Chart_*.json"
+    },
+    "search_methods": {
+      "material_search": "재료명으로 검색하여 모든 특성 데이터 제공",
+      "temperature_search": "온도로 검색하여 해당 온도에서의 응력 값 제공",
+      "property_search": "특성명으로 검색하여 모든 재료별 데이터 제공",
+      "form_search": "제품 형태로 검색하여 해당 형태의 재료 정보 제공"
+    }
+  },
+  "design_tips": {
+    "temperature_interpolation": "표에 없는 온도는 선형 보간 사용",
+    "safety_factor": "설계 시 적절한 안전계수 적용",
+    "code_requirements": "ASME BPVC Section VIII Division 1 준수",
+    "verification": "최종 설계는 공인된 엔지니어 검토 필요"
+  }
+} 

@@ -1,0 +1,535 @@
+{
+  "metadata": {
+    "total_samples": 75,
+    "training_samples": 52,
+    "validation_samples": 15,
+    "testing_samples": 8,
+    "categories": {
+      "allowable_stress": 48,
+      "usage_guideline": 12,
+      "recommended_materials": 3,
+      "design_conditions": 3,
+      "mechanical_properties": 3,
+      "material_specification": 3,
+      "design_conclusion": 3
+    }
+  },
+  "datasets": {
+    "training": [
+      {
+        "question": "SA-516_Grade_70 재료의 600F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-516_Grade_70 재료의 600F에서의 허용응력값은 17.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "600F"
+      },
+      {
+        "question": "Type_321 재료의 200F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_321 재료의 200F에서의 허용응력값은 19.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "200F"
+      },
+      {
+        "question": "stainless_steel의 cost_considerations은 어떻게 되나요?",
+        "answer": "stainless_steel의 cost_considerations: 고비용, 특수환경용",
+        "category": "usage_guideline",
+        "material_type": "stainless_steel",
+        "guideline_type": "cost_considerations"
+      },
+      {
+        "question": "low_temperature_tank에 권장되는 재료는 무엇인가요?",
+        "answer": "low_temperature_tank에 권장되는 재료: SA-333 Grade 6, Type 304L SS",
+        "category": "recommended_materials",
+        "design_type": "low_temperature_tank"
+      },
+      {
+        "question": "SA-283_Grade_C 재료의 200F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-283_Grade_C 재료의 200F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "200F"
+      },
+      {
+        "question": "stainless_steel의 temperature_limits은 어떻게 되나요?",
+        "answer": "stainless_steel의 temperature_limits: 최대 1500°F (산화 한계 고려)",
+        "category": "usage_guideline",
+        "material_type": "stainless_steel",
+        "guideline_type": "temperature_limits"
+      },
+      {
+        "question": "SA-283_Grade_C 재료의 300F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-283_Grade_C 재료의 300F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "300F"
+      },
+      {
+        "question": "Type_304 재료의 700F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_304 재료의 700F에서의 허용응력값은 17.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "700F"
+      },
+      {
+        "question": "SA-285_Grade_C 재료의 500F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-285_Grade_C 재료의 500F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "500F"
+      },
+      {
+        "question": "SA-283_Grade_C 재료의 400F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-283_Grade_C 재료의 400F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "400F"
+      },
+      {
+        "question": "SA-516_Grade_70 재료의 200F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-516_Grade_70 재료의 200F에서의 허용응력값은 19.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "200F"
+      },
+      {
+        "question": "Type_316 재료의 700F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_316 재료의 700F에서의 허용응력값은 17.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "700F"
+      },
+      {
+        "question": "Type_304 재료의 100F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_304 재료의 100F에서의 허용응력값은 20.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "100F"
+      },
+      {
+        "question": "Type_304 재료의 400F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_304 재료의 400F에서의 허용응력값은 18.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "400F"
+      },
+      {
+        "question": "Type_321 재료의 300F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_321 재료의 300F에서의 허용응력값은 19.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "300F"
+      },
+      {
+        "question": "alloy_steel의 cost_considerations은 어떻게 되나요?",
+        "answer": "alloy_steel의 cost_considerations: 중간 비용, 고온용으로 특화",
+        "category": "usage_guideline",
+        "material_type": "alloy_steel",
+        "guideline_type": "cost_considerations"
+      },
+      {
+        "question": "general_pressure_vessel 설계 조건은 무엇인가요?",
+        "answer": "general_pressure_vessel 설계 조건: 온도 400°F, 압력 500 psi",
+        "category": "design_conditions",
+        "design_type": "general_pressure_vessel"
+      },
+      {
+        "question": "Type_304 재료의 200F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_304 재료의 200F에서의 허용응력값은 19.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "200F"
+      },
+      {
+        "question": "carbon_steel의 weldability은 어떻게 되나요?",
+        "answer": "carbon_steel의 weldability: 일반 용접 가능, 사전가열 불필요",
+        "category": "usage_guideline",
+        "material_type": "carbon_steel",
+        "guideline_type": "weldability"
+      },
+      {
+        "question": "Type_316 재료의 600F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_316 재료의 600F에서의 허용응력값은 17.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "600F"
+      },
+      {
+        "question": "stainless_steel의 weldability은 어떻게 되나요?",
+        "answer": "stainless_steel의 weldability: 적절한 필러 금속 선택 필요",
+        "category": "usage_guideline",
+        "material_type": "stainless_steel",
+        "guideline_type": "weldability"
+      },
+      {
+        "question": "SA-516_Grade_70 재료의 500F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-516_Grade_70 재료의 500F에서의 허용응력값은 18.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "500F"
+      },
+      {
+        "question": "carbon_steel의 corrosion_resistance은 어떻게 되나요?",
+        "answer": "carbon_steel의 corrosion_resistance: 도장/코팅 필요, 부식환경 주의",
+        "category": "usage_guideline",
+        "material_type": "carbon_steel",
+        "guideline_type": "corrosion_resistance"
+      },
+      {
+        "question": "Type_321 재료의 800F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_321 재료의 800F에서의 허용응력값은 16.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "800F"
+      },
+      {
+        "question": "Type_321 재료의 400F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_321 재료의 400F에서의 허용응력값은 18.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "400F"
+      },
+      {
+        "question": "SA-285_Grade_C 재료의 100F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-285_Grade_C 재료의 100F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "100F"
+      },
+      {
+        "question": "Alloy Steel (합금강)의 기계적 특성은 어떻게 되나요?",
+        "answer": "Alloy Steel (합금강)의 기계적 특성: {\"high_temperature_oxidation_resistance\": \"우수\", \"creep_resistance\": \"우수\", \"high_temperature_strength\": \"우수\", \"weldability\": \"보통 (사전가열 필요)\"}",
+        "category": "mechanical_properties",
+        "material_type": "alloy_steel"
+      },
+      {
+        "question": "Type_304 재료의 500F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_304 재료의 500F에서의 허용응력값은 18.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "500F"
+      },
+      {
+        "question": "alloy_steel의 corrosion_resistance은 어떻게 되나요?",
+        "answer": "alloy_steel의 corrosion_resistance: 일반적으로 보통 수준",
+        "category": "usage_guideline",
+        "material_type": "alloy_steel",
+        "guideline_type": "corrosion_resistance"
+      },
+      {
+        "question": "Type_316 재료의 400F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_316 재료의 400F에서의 허용응력값은 18.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "400F"
+      },
+      {
+        "question": "Type_304 재료의 300F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_304 재료의 300F에서의 허용응력값은 19.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "300F"
+      },
+      {
+        "question": "Carbon Steel (탄소강)의 주요 사양은 무엇인가요?",
+        "answer": "Carbon Steel (탄소강)의 주요 사양은 SA-516, SA-283, SA-285, SA-333, SA-334, SA-414, SA-524, SA-671, SA-672입니다.",
+        "category": "material_specification",
+        "material_type": "carbon_steel"
+      },
+      {
+        "question": "Carbon Steel (탄소강)의 기계적 특성은 어떻게 되나요?",
+        "answer": "Carbon Steel (탄소강)의 기계적 특성: {\"tensile_strength_range\": \"55-85 ksi\", \"yield_strength_range\": \"30-55 ksi\", \"temperature_limit\": \"상온~800°F\", \"weldability\": \"우수\", \"corrosion_resistance\": \"보통 (도장/코팅 필요)\"}",
+        "category": "mechanical_properties",
+        "material_type": "carbon_steel"
+      },
+      {
+        "question": "Type_316 재료의 800F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_316 재료의 800F에서의 허용응력값은 16.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "800F"
+      },
+      {
+        "question": "carbon_steel의 temperature_limits은 어떻게 되나요?",
+        "answer": "carbon_steel의 temperature_limits: 최대 800°F (고온에서 강도 급격히 감소)",
+        "category": "usage_guideline",
+        "material_type": "carbon_steel",
+        "guideline_type": "temperature_limits"
+      },
+      {
+        "question": "Type_321 재료의 500F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_321 재료의 500F에서의 허용응력값은 18.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "500F"
+      },
+      {
+        "question": "Stainless Steel (스테인리스강)의 기계적 특성은 어떻게 되나요?",
+        "answer": "Stainless Steel (스테인리스강)의 기계적 특성: {\"corrosion_resistance\": \"우수\", \"high_temperature_strength\": \"우수\", \"creep_resistance\": \"우수\", \"weldability\": \"우수\"}",
+        "category": "mechanical_properties",
+        "material_type": "stainless_steel"
+      },
+      {
+        "question": "SA-516_Grade_70 재료의 100F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-516_Grade_70 재료의 100F에서의 허용응력값은 20.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "100F"
+      },
+      {
+        "question": "SA-516_Grade_70 재료의 700F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-516_Grade_70 재료의 700F에서의 허용응력값은 17.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "700F"
+      },
+      {
+        "question": "high_temperature_vessel 설계 조건은 무엇인가요?",
+        "answer": "high_temperature_vessel 설계 조건: 온도 800°F, 압력 1000 psi",
+        "category": "design_conditions",
+        "design_type": "high_temperature_vessel"
+      },
+      {
+        "question": "carbon_steel의 cost_considerations은 어떻게 되나요?",
+        "answer": "carbon_steel의 cost_considerations: 가장 경제적, 범용 사용",
+        "category": "usage_guideline",
+        "material_type": "carbon_steel",
+        "guideline_type": "cost_considerations"
+      },
+      {
+        "question": "SA-283_Grade_C 재료의 600F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-283_Grade_C 재료의 600F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "600F"
+      },
+      {
+        "question": "SA-283_Grade_C 재료의 500F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-283_Grade_C 재료의 500F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "500F"
+      },
+      {
+        "question": "general_pressure_vessel 설계의 결론은 무엇인가요?",
+        "answer": "가장 경제적이고 범용적인 선택",
+        "category": "design_conclusion",
+        "design_type": "general_pressure_vessel"
+      },
+      {
+        "question": "alloy_steel의 weldability은 어떻게 되나요?",
+        "answer": "alloy_steel의 weldability: 사전가열 필요, 후열처리 고려",
+        "category": "usage_guideline",
+        "material_type": "alloy_steel",
+        "guideline_type": "weldability"
+      },
+      {
+        "question": "SA-285_Grade_C 재료의 800F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-285_Grade_C 재료의 800F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "800F"
+      },
+      {
+        "question": "Type_316 재료의 200F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_316 재료의 200F에서의 허용응력값은 19.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "200F"
+      },
+      {
+        "question": "low_temperature_tank 설계의 결론은 무엇인가요?",
+        "answer": "SA-333 Grade 6이 경제적이고 적합",
+        "category": "design_conclusion",
+        "design_type": "low_temperature_tank"
+      },
+      {
+        "question": "low_temperature_tank 설계 조건은 무엇인가요?",
+        "answer": "low_temperature_tank 설계 조건: 온도 -50°F, 압력 100 psi",
+        "category": "design_conditions",
+        "design_type": "low_temperature_tank"
+      },
+      {
+        "question": "alloy_steel의 temperature_limits은 어떻게 되나요?",
+        "answer": "alloy_steel의 temperature_limits: 최대 1200°F (크리프 한계 고려)",
+        "category": "usage_guideline",
+        "material_type": "alloy_steel",
+        "guideline_type": "temperature_limits"
+      },
+      {
+        "question": "Type_316 재료의 500F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_316 재료의 500F에서의 허용응력값은 18.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "500F"
+      },
+      {
+        "question": "SA-285_Grade_C 재료의 700F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-285_Grade_C 재료의 700F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "700F"
+      }
+    ],
+    "validation": [
+      {
+        "question": "SA-516_Grade_70 재료의 400F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-516_Grade_70 재료의 400F에서의 허용응력값은 18.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "400F"
+      },
+      {
+        "question": "SA-516_Grade_70 재료의 800F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-516_Grade_70 재료의 800F에서의 허용응력값은 16.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "800F"
+      },
+      {
+        "question": "Type_321 재료의 700F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_321 재료의 700F에서의 허용응력값은 17.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "700F"
+      },
+      {
+        "question": "Type_316 재료의 300F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_316 재료의 300F에서의 허용응력값은 19.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "300F"
+      },
+      {
+        "question": "Type_304 재료의 600F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_304 재료의 600F에서의 허용응력값은 17.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "600F"
+      },
+      {
+        "question": "Alloy Steel (합금강)의 주요 사양은 무엇인가요?",
+        "answer": "Alloy Steel (합금강)의 주요 사양은 SA-213, SA-335, SA-387입니다.",
+        "category": "material_specification",
+        "material_type": "alloy_steel"
+      },
+      {
+        "question": "SA-283_Grade_C 재료의 100F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-283_Grade_C 재료의 100F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "100F"
+      },
+      {
+        "question": "SA-283_Grade_C 재료의 800F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-283_Grade_C 재료의 800F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "800F"
+      },
+      {
+        "question": "SA-285_Grade_C 재료의 200F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-285_Grade_C 재료의 200F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "200F"
+      },
+      {
+        "question": "SA-516_Grade_70 재료의 300F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-516_Grade_70 재료의 300F에서의 허용응력값은 19.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "300F"
+      },
+      {
+        "question": "Type_316 재료의 100F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_316 재료의 100F에서의 허용응력값은 20.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "100F"
+      },
+      {
+        "question": "SA-285_Grade_C 재료의 400F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-285_Grade_C 재료의 400F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "400F"
+      },
+      {
+        "question": "SA-283_Grade_C 재료의 700F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-283_Grade_C 재료의 700F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "700F"
+      },
+      {
+        "question": "Type_321 재료의 600F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_321 재료의 600F에서의 허용응력값은 17.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "600F"
+      },
+      {
+        "question": "Stainless Steel (스테인리스강)의 주요 사양은 무엇인가요?",
+        "answer": "Stainless Steel (스테인리스강)의 주요 사양은 SA-240, SA-312, SA-358, SA-376, SA-409, SA-430, SA-479입니다.",
+        "category": "material_specification",
+        "material_type": "stainless_steel"
+      }
+    ],
+    "testing": [
+      {
+        "question": "SA-285_Grade_C 재료의 600F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-285_Grade_C 재료의 600F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "600F"
+      },
+      {
+        "question": "SA-285_Grade_C 재료의 300F에서의 허용응력값은 얼마인가요?",
+        "answer": "SA-285_Grade_C 재료의 300F에서의 허용응력값은 16.3 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "carbon_steel",
+        "temperature": "300F"
+      },
+      {
+        "question": "general_pressure_vessel에 권장되는 재료는 무엇인가요?",
+        "answer": "general_pressure_vessel에 권장되는 재료: SA-516 Grade 70",
+        "category": "recommended_materials",
+        "design_type": "general_pressure_vessel"
+      },
+      {
+        "question": "Type_304 재료의 800F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_304 재료의 800F에서의 허용응력값은 16.5 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "800F"
+      },
+      {
+        "question": "high_temperature_vessel 설계의 결론은 무엇인가요?",
+        "answer": "Type 304 SS가 더 높은 허용응력으로 경제적",
+        "category": "design_conclusion",
+        "design_type": "high_temperature_vessel"
+      },
+      {
+        "question": "Type_321 재료의 100F에서의 허용응력값은 얼마인가요?",
+        "answer": "Type_321 재료의 100F에서의 허용응력값은 20.0 ksi입니다.",
+        "category": "allowable_stress",
+        "material_type": "stainless_steel",
+        "temperature": "100F"
+      },
+      {
+        "question": "high_temperature_vessel에 권장되는 재료는 무엇인가요?",
+        "answer": "high_temperature_vessel에 권장되는 재료: SA-213 T91, Type 304 SS",
+        "category": "recommended_materials",
+        "design_type": "high_temperature_vessel"
+      },
+      {
+        "question": "stainless_steel의 corrosion_resistance은 어떻게 되나요?",
+        "answer": "stainless_steel의 corrosion_resistance: 우수한 내식성, 특수환경 적합",
+        "category": "usage_guideline",
+        "material_type": "stainless_steel",
+        "guideline_type": "corrosion_resistance"
+      }
+    ]
+  }
+}
